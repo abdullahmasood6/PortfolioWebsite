@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar';
+import ParticlesBG from './components/ParticlesBG';
 import BackToTop from './components/BackToTop';
 
 import Hero from './sections/Hero';
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <ParticlesBG />
       <main>
         <Hero />
         <About />
