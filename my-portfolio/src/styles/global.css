@@ -1,9 +1,13 @@
+/* ------------------------------------------------------------------
+   GLOBAL STYLES – Version 2  + larger hero photo & card tweaks
+   ------------------------------------------------------------------ */
+
 /* ---------- colour tokens ---------- */
 :root{
   --accent:#00c8c8;
   --bg-900:#0e0e0e;
   --bg-800:#151515;
-  --panel:#131313;          /* new */
+  --panel:rgba(0,0,0,.55);
   --text-light:#f4f4f4;
   --text-mid:#c9c9c9;
   --border:#272727;
@@ -13,22 +17,26 @@
 body{opacity:0;transition:opacity .6s ease-out;font-size:16px;}
 body.loaded{opacity:1;}
 
-/* ---------- reset ---------- */
+/* ---------- animated mesh‑gradient background ---------- */
+body{background:var(--bg-900);}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;
+  background:linear-gradient(115deg,#00c8c8 0%,#0e5cff 50%,#ff0078 100%);
+  background-size:400% 400%;
+  animation:mesh 18s ease-in-out infinite;
+}
+@keyframes mesh{
+  0%,100%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+}
+
+/* ---------- reset & base ---------- */
 *{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth;}
 html,body{height:100%;}
 body{
   font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-  background:var(--bg-900);
   color:var(--text-light);
   line-height:1.65;
-}
-
-/* ---------- soft overlay ---------- */
-body::before{
-  content:"";position:fixed;inset:0;pointer-events:none;z-index:-2;
-  background:
-    radial-gradient(at 25% 25%,rgba(0,200,200,.08),transparent 60%),
-    radial-gradient(at 75% 75%,rgba(0,200,200,.06),transparent 60%);
 }
 
 /* ---------- layout ---------- */
@@ -40,15 +48,10 @@ main{max-width:1150px;margin:80px auto 0;padding:0 1.25rem;}
   background:var(--panel);
   box-shadow:0 30px 40px rgba(0,0,0,.25) inset;
 }
-.section:nth-of-type(even){background:var(--bg-800);} /* subtle zebra */
-
+.section:nth-of-type(even){background:var(--bg-800);}
 .section h2{
-  font-size:2.6rem;              /* bigger */
-  margin-bottom:1.4rem;
-  position:relative;
-  text-align:center;
-  letter-spacing:-0.5px;
-  font-weight:700;
+  font-size:2.6rem;margin-bottom:1.4rem;position:relative;
+  text-align:center;letter-spacing:-0.5px;font-weight:700;
 }
 .section h2::after{
   content:"";position:absolute;left:50%;transform:translateX(-50%);
@@ -67,30 +70,50 @@ a{color:var(--accent);} a:hover{text-decoration:underline;}
   box-shadow:0 8px 18px rgba(0,0,0,.4);
 }
 
-/* ---------- hero ---------- */
-.hero{
-  min-height:calc(100vh - 60px);
-  display:flex;flex-direction:column;justify-content:center;
+/* bullet lists inside cards */
+.card ul{
+  margin:1rem 0 0;
+  padding-left:1.4rem;              /* nicer alignment */
+  list-style-type:disc;
+  list-style-position:inside;
 }
-.hero h1{
-  font-size:clamp(3rem,6vw,4.5rem);
-  font-weight:800;
-  line-height:1.15;
+.card ul li{margin:.5rem 0;line-height:1.55;}
+
+/* ---------- hero with larger profile photo ---------- */
+.hero{min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:center;}
+
+.hero-inner{display:flex;align-items:center;gap:4rem;flex-wrap:wrap;}
+.intro{flex:1 1 400px;}
+
+.photo-wrap{
+  flex:0 0 370px;height:370px;        /* larger desktop size */
+  border-radius:50%;overflow:hidden;
+  box-shadow:0 12px 26px rgba(0,0,0,.55);
 }
+.photo-wrap img{width:100%;height:100%;object-fit:cover;}
+
+/* tablet */
+@media(max-width:1020px){
+  .hero-inner{gap:3rem;}
+  .photo-wrap{flex:0 0 280px;height:280px;}
+}
+
+/* mobile */
+@media(max-width:700px){
+  .hero-inner{flex-direction:column;text-align:center;}
+  .photo-wrap{margin-top:2.2rem;}
+}
+
+.hero h1{font-size:clamp(3rem,6vw,4.5rem);font-weight:800;line-height:1.15;}
 .hero h1 span{color:var(--accent);}
-.hero .lead{
-  margin:1.2rem 0 2.8rem;
-  font-size:1.25rem;
-  max-width:640px;
-  color:var(--text-mid);
-}
+.hero .lead{margin:1.2rem 0 2.8rem;font-size:1.25rem;max-width:640px;color:var(--text-mid);}
+.btn-row{display:flex;gap:1rem;flex-wrap:wrap;}
 
 /* ---------- buttons ---------- */
 .btn-accent{
   position:relative;overflow:hidden;cursor:pointer;
   display:inline-block;border:2px solid var(--accent);
-  padding:.9rem 1.85rem;font-weight:600;
-  color:var(--accent);background:transparent;
+  padding:.9rem 1.85rem;font-weight:600;color:var(--accent);background:transparent;
   transition:color .25s,background .25s;
 }
 .btn-accent:hover{background:var(--accent);color:var(--bg-900);}
@@ -100,13 +123,9 @@ a{color:var(--accent);} a:hover{text-decoration:underline;}
   transition:left .4s;
 }
 .btn-accent:hover::after{left:120%;}
+.btn-fill{cursor:pointer;}
 
-.btn-fill{cursor:pointer;}        /* contact form button */
-
-/* ---------- pointer for any .card link (e.g., project flip) ---------- */
-.card a{cursor:pointer;}
-
-/* ---------- timeline / grid / contact --------- (unchanged) ---------- */
+/* ---------- timeline ---------- */
 .timeline{position:relative;margin-top:3rem;}
 .timeline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--border);}
 .exp-item{width:48%;margin-bottom:3.5rem;position:relative;}
@@ -125,12 +144,10 @@ a{color:var(--accent);} a:hover{text-decoration:underline;}
   .exp-item::before{left:-9px;right:auto;}
 }
 
+/* ---------- grids & contact ---------- */
 .grid-2{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));}
 
-.contact-wrap{
-  display:grid;gap:2.5rem;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-}
+.contact-wrap{display:grid;gap:2.5rem;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));}
 .contact-wrap input,.contact-wrap textarea{
   width:100%;padding:.8rem;border:1px solid var(--border);border-radius:4px;
   background:var(--bg-800);color:var(--text-light);font-size:1rem;
@@ -144,9 +161,6 @@ a{color:var(--accent);} a:hover{text-decoration:underline;}
 .btn-fill:hover{opacity:.9;cursor:pointer;}
 
 /* ---------- footer ---------- */
-footer{
-  background:#0a0a0a;text-align:center;
-  padding:2.2rem 1rem;font-size:.9rem;color:var(--text-mid);
-}
+footer{background:#0a0a0a;text-align:center;padding:2.2rem 1rem;font-size:.9rem;color:var(--text-mid);}
 footer .links a{margin:0 .75rem;color:var(--text-mid);cursor:pointer;}
 footer .links a:hover{color:var(--accent);}
