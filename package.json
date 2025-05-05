@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "framer-motion": "^12.9.4",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.8.1"
+  }
+}
