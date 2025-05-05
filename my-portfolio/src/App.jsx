@@ -7,7 +7,7 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Education from './sections/Education';
-import Activities from './sections/Activities';          // volunteering / clubs
+import Activities from './sections/Activities';
 import LinkedInActivity from './sections/LinkedInActivity';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
@@ -15,13 +15,8 @@ import Footer from './sections/Footer';
 function App() {
   return (
     <>
-      {/* fixed top bar */}
       <Navbar />
-
-      {/* star / dot particle background (z‑index = ‑3) */}
       <ParticlesBG />
-
-      {/* main content */}
       <main>
         <Hero />
         <About />
@@ -32,8 +27,6 @@ function App() {
         <LinkedInActivity />
         <Contact />
       </main>
-
-      {/* footer + utilities */}
       <Footer />
       <BackToTop />
     </>
