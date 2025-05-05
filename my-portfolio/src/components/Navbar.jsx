@@ -24,6 +24,7 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <h1 className="logo">AM</h1>
+
       <ul>
         {items.map((id) => (
           <li key={id}>
@@ -37,6 +38,18 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
+
+        {/* NEW résumé download button */}
+        <li>
+          <a
+            href="/resume.pdf"
+            download
+            className="resume-btn"
+            title="Download résumé (PDF)"
+          >
+            Résumé
+          </a>
+        </li>
       </ul>
     </nav>
   );

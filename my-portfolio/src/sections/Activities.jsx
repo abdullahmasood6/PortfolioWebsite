@@ -1,3 +1,5 @@
+import Card from '../components/Card';
+
 const Activities = () => (
   <section id="activities" className="section">
     <h2>Activities & Volunteering</h2>
@@ -5,30 +7,32 @@ const Activities = () => (
       Leadership roles and community initiatives I’ve been involved with
     </p>
 
-    <div className="card" style={{ marginBottom: '2rem' }}>
-      <h3>Startup World Cup Arizona — Organizer</h3>
+    <Card className="mb">
+      <h3>Startup World Cup Arizona — Organizer</h3>
+      <small>2025 – Present</small>
       <p>
-        Help organise the regional competition, connecting innovative startups
-        with investors and providing a platform for entrepreneurs to showcase
-        ideas on a global stage.
+        Coordinate regional competition logistics and connect innovative
+        startups with investors &amp; mentors.
       </p>
-    </div>
+    </Card>
 
-    <div className="card" style={{ marginBottom: '2rem' }}>
-      <h3>Habitat for Humanity — Fundraiser</h3>
+    <Card className="mb">
+      <h3>SRM Welkin School — President / Vice‑President</h3>
+      <small>2017 – 2019</small>
       <p>
-        Successfully raised&nbsp;₹12 lakh to build washrooms and sanitation
-        units for under‑privileged children in local government schools.
+        Led student body, maintained discipline, organised events, and mentored
+        junior leaders.
       </p>
-    </div>
+    </Card>
 
-    <div className="card">
-      <h3>Lions Clubs International — Fundraiser</h3>
+    <Card>
+      <h3>Community Math Tutor</h3>
+      <small>Mar 2020 – Feb 2021</small>
       <p>
-        Conducted community fundraisers supporting educational initiatives and
-        local healthcare drives.
+        Volunteered to teach math to primary &amp; middle‑school students in my
+        hometown.
       </p>
-    </div>
+    </Card>
   </section>
 );
 
