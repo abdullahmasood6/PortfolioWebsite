@@ -1,0 +1,6 @@
+.fab{
+  position:fixed;right:24px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  background:var(--accent);color:#0e0e0e;border:none;font-size:1.3rem;font-weight:700;
+  cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,.4);z-index:900;
+}
+.fab:hover{opacity:.9;}
