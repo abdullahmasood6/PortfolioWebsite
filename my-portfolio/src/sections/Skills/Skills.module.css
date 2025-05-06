@@ -1,3 +1,5 @@
+/* Skills.module.css */
+
 .sectionWrapper {
   background-color: #0b0b0b;
   width: 100%;
@@ -36,18 +38,10 @@
 }
 
 .skillsWrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .skillsWrapper {
-    flex-direction: row;
-    justify-content: center;
-    gap: 3rem;
-  }
+  justify-content: center;
 }
 
 .card {
@@ -73,7 +67,7 @@
 }
 
 .icon {
-  font-size: 1.75rem;
+  font-size: 2rem;
   color: #00ffff;
 }
 
@@ -83,7 +77,6 @@
   margin: 0;
 }
 
-/* Skill bar additions */
 .skillItem {
   margin-bottom: 1rem;
 }
@@ -91,9 +84,15 @@
 .skillLabel {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.6rem;
   color: white;
-  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.skillLabel img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
 }
 
 .skillBarWrapper {
@@ -102,6 +101,7 @@
   border-radius: 9999px;
   height: 8px;
   overflow: hidden;
+  margin-top: 4px;
 }
 
 .skillBar {
@@ -111,7 +111,6 @@
   transition: width 0.5s ease;
 }
 
-/* Responsive tweaks for smaller screens */
 @media (max-width: 600px) {
   .card {
     padding: 1.25rem;
@@ -124,4 +123,29 @@
   .skillLabel {
     font-size: 0.95rem;
   }
+}
+
+/* Toolbar styles */
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.toolbarBtn {
+  background-color: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.toolbarBtn:hover {
+  background-color: #00ffff;
+  color: #0b0b0b;
 }

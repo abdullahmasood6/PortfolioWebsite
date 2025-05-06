@@ -5,8 +5,10 @@ import {
 } from "react-icons/fa";
 import {
   SiCplusplus, SiSqlite, SiTailwindcss,
-  SiExpress, SiP5Dotjs, SiNextdotjs
+  SiExpress, SiP5Dotjs, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiDjango,
+  SiSwift, SiNestjs, SiSumologic
 } from "react-icons/si";
+import { IoLanguage } from "react-icons/io5";
 
 import styles from "./Skills.module.css";
 
@@ -16,8 +18,14 @@ const Skills = () => {
       <div className={styles.container}>
         <h2 className={styles.sectionTitle}>Skills</h2>
         <p className={styles.subText}>
-          Technologies and tools I’ve worked with across development, scripting, and design.
+          Technologies, languages, and frameworks I’ve worked with professionally and academically.
         </p>
+
+        <div className={styles.toolbar}>
+          <button className={styles.toolbarBtn}>Languages</button>
+          <button className={styles.toolbarBtn}>Frameworks</button>
+          <button className={styles.toolbarBtn}>Spoken Languages</button>
+        </div>
 
         <div className={styles.skillsWrapper}>
           {/* Programming Languages */}
@@ -27,30 +35,27 @@ const Skills = () => {
             </div>
             <h3 className={styles.cardTitle}>Programming Languages</h3>
             <ul className={styles.list}>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaJava /> Java</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "90%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaPython /> Python</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "85%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><SiCplusplus /> C++</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "70%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaJs /> JavaScript</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "80%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><SiSqlite /> SQL</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "75%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaTerminal /> Bash</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "60%" }}></div></div>
-              </li>
+              {[ 
+                { icon: <SiHtml5 color="#e34c26" />, label: "HTML", width: "95%" },
+                { icon: <SiCss3 color="#264de4" />, label: "CSS", width: "90%" },
+                { icon: <FaJs color="#f0db4f" />, label: "JavaScript", width: "85%" },
+                { icon: <SiTypescript color="#3178c6" />, label: "TypeScript", width: "75%" },
+                { icon: <FaPython color="#3776ab" />, label: "Python", width: "85%" },
+                { icon: <SiDjango color="#092e20" />, label: "Django", width: "80%" },
+                { icon: <SiSwift color="#f05138" />, label: "Swift", width: "70%" },
+                { icon: <SiNestjs color="#ea2845" />, label: "NestJS", width: "60%" },
+                { icon: <FaNode color="#3c873a" />, label: "Node.js", width: "80%" },
+                { icon: <FaJava color="#007396" />, label: "Java", width: "90%" },
+                { icon: <SiCplusplus color="#00599c" />, label: "C++", width: "75%" },
+                { icon: <FaTerminal color="#00ffff" />, label: "Bash", width: "70%" },
+                { icon: <SiSqlite color="#003B57" />, label: "SQL", width: "78%" },
+                { icon: <img src="/skills/playwright.png" alt="Playwright" />, label: "Playwright", width: "65%" }
+              ].map(({ icon, label, width }) => (
+                <li className={styles.skillItem} key={label}>
+                  <div className={styles.skillLabel}>{icon} {label}</div>
+                  <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width }}></div></div>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -61,34 +66,42 @@ const Skills = () => {
             </div>
             <h3 className={styles.cardTitle}>Frameworks & Libraries</h3>
             <ul className={styles.list}>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaReact /> React</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "90%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><SiNextdotjs /> Next.js</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "80%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaNode /> Node.js</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "85%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><SiExpress /> Express.js</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "75%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><SiTailwindcss /> Tailwind CSS</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "85%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><FaBootstrap /> Bootstrap</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "70%" }}></div></div>
-              </li>
-              <li className={styles.skillItem}>
-                <div className={styles.skillLabel}><SiP5Dotjs /> p5.js</div>
-                <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width: "65%" }}></div></div>
-              </li>
+              {[
+                { icon: <FaReact color="#61DBFB" />, label: "React", width: "90%" },
+                { icon: <SiNextdotjs />, label: "Next.js", width: "80%" },
+                { icon: <FaNode color="#3c873a" />, label: "Node.js", width: "85%" },
+                { icon: <SiExpress />, label: "Express.js", width: "78%" },
+                { icon: <SiTailwindcss color="#06B6D4" />, label: "Tailwind CSS", width: "85%" },
+                { icon: <FaBootstrap color="#7952B3" />, label: "Bootstrap", width: "75%" },
+                { icon: <SiP5Dotjs color="#ED225D" />, label: "p5.js", width: "68%" },
+                { icon: <SiSumologic color="#00b1ff" />, label: "SumoLogic", width: "65%" }
+              ].map(({ icon, label, width }) => (
+                <li className={styles.skillItem} key={label}>
+                  <div className={styles.skillLabel}>{icon} {label}</div>
+                  <div className={styles.skillBarWrapper}><div className={styles.skillBar} style={{ width }}></div></div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Spoken Languages */}
+          <div className={styles.card}>
+            <div className={styles.iconWrapper}>
+              <IoLanguage className={styles.icon} />
+            </div>
+            <h3 className={styles.cardTitle}>Languages</h3>
+            <ul className={styles.list}>
+              {[
+                { flag: "/skills/us.svg", label: "English (Proficient)" },
+                { flag: "/skills/japan.svg", label: "Japanese (Working knowledge)" },
+                { flag: "/skills/india.svg", label: "Urdu (Proficient)" },
+                { flag: "/skills/india.svg", label: "Hindi (Proficient)" },
+                { flag: "/skills/india.svg", label: "Kashmiri (Native)" }
+              ].map(({ flag, label }) => (
+                <li className={styles.skillLabel} key={label}>
+                  <img src={flag} alt={label} /> {label}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
