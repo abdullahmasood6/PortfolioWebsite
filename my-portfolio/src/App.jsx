@@ -10,6 +10,7 @@ import Education from './sections/Education';
 import Skills from "./sections/Skills/Skills";
 import Activities from './sections/Activities';
 import LinkedInActivity from './sections/LinkedInActivity';
+import Life from './sections/Life';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
@@ -27,6 +28,7 @@ function App() {
         <Skills />
         <Activities />
         <LinkedInActivity />
+        <Life />
         <Contact />
       </main>
       <Footer />

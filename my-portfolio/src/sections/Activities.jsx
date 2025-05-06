@@ -1,3 +1,4 @@
+import React from "react";
 import Card from '../components/Card';
 
 const Activities = () => (
@@ -8,11 +9,16 @@ const Activities = () => (
     </p>
 
     <Card className="mb">
-      <h3>Startup World Cup Arizona — Organizer</h3>
-      <small>2025 – Present</small>
+      <h3>Student Leadership & Mentorship Roles</h3>
+      <small>2014 – 2021</small>
+      <ul style={{ margin: '0.5rem 0 1rem 1.2rem', padding: 0 }}>
+        <li>Class President</li>
+        <li>Class Vice-President</li>
+        <li>Lab Monitor</li>
+        <li>Extracurricular Head</li>
+      </ul>
       <p>
-        Coordinate regional competition logistics and connect innovative
-        startups with investors &amp; mentors.
+        Actively supported classroom leadership, lab safety, and extracurricular coordination. Played a key role in fostering academic motivation, event planning, and a collaborative environment among peers.
       </p>
     </Card>
 
@@ -20,7 +26,7 @@ const Activities = () => (
       <h3>SRM Welkin School — President / Vice‑President</h3>
       <small>2017 – 2019</small>
       <p>
-        Led student body, maintained discipline, organised events, and mentored
+        Led student body, maintained discipline, organized events, and mentored
         junior leaders.
       </p>
     </Card>

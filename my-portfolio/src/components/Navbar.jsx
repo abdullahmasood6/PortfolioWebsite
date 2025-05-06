@@ -2,7 +2,15 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Navbar.css';
 
-const items = ['about', 'experience', 'projects', 'education', 'activities', 'contact'];
+const items = [
+  'about',
+  'experience',
+  'projects',
+  'education',
+  'activities',
+  'life',        // ✅ added this
+  'contact'
+];
 
 const Navbar = () => {
   const [active, setActive] = useState('about');
@@ -39,7 +47,7 @@ const Navbar = () => {
           </li>
         ))}
 
-        {/* NEW résumé download button */}
+        {/* résumé download button */}
         <li>
           <a
             href="/resume.pdf"
