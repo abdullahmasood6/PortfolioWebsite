@@ -52,20 +52,24 @@ const Experience = () => (
           <h3>ImmiCan — Software Developer (Part‑time)</h3>
           <small>Aug 2024 – May 2025 · Remote</small>
           <ul>
-            <li>Architected a Django‑based admin dashboard to monitor immigrant progress, scoring distribution &amp; analytics.</li>
-            <li>Built REST APIs &amp; integrated PostgreSQL with Flask micro‑services.</li>
+            <li>Developed Django APIs and PostgreSQL-backed microservices to calculate ImmiScore and persist results.</li>
+            <li>Built React/Next.js dashboards to visualize scoring data, roadmap graphs, and form-driven metrics.</li>
+            <li>Integrated socket.io-based chat for real-time user–provider interaction (employment, healthcare, legal).</li>
+            <li>Implemented CI/CD workflows for test automation, staging deployments, and sprint-based delivery.</li>
           </ul>
         </Card>
       </div>
 
-      {/* ───────────── ASU Teaching Assistant ───────────── */}
+      {/* ───────────── ASU Teaching Assistant ───────────── */}
       <div className="exp-item right">
         <Card>
           <Logo src={asuLogo} alt="Arizona State University" />
-          <h3>Arizona State University — Undergraduate TA (CSE 205 / Data Structures)</h3>
+          <h3>Arizona State University — Undergraduate TA (CSE 205 / Data Structures)</h3>
           <small>Jan 2024 – May 2024 · Tempe, AZ</small>
           <ul>
-            <li>Ran weekly recitations &amp; review sessions for 200 + students; graded projects &amp; exams.</li>
+            <li>Led three lab sections weekly for 150+ students on object-oriented programming & data structures.</li>
+            <li>Designed and graded programming assignments, exams, and real-world coding exercises in Java.</li>
+            <li>Held office hours to assist students with CSE 205 coursework, debugging, and algorithm design.</li>
           </ul>
         </Card>
       </div>
@@ -73,45 +77,52 @@ const Experience = () => (
       <div className="exp-item left">
         <Card>
           <Logo src={asuLogo} alt="Arizona State University" />
-          <h3>Arizona State University — Undergraduate TA (CSE 100 / C++)</h3>
+          <h3>Arizona State University — Undergraduate TA (CSE 100 / C++)</h3>
           <small>Aug 2023 – Dec 2023 · Tempe, AZ</small>
           <ul>
-            <li>Designed interactive labs that improved student pass rate by 12 % semester‑over‑semester.</li>
+            <li>Facilitated hands-on C++ labs for 150+ students, reinforcing core programming fundamentals.</li>
+            <li>Provided personalized support and conducted detailed code reviews to improve programming clarity.</li>
+            <li>Led targeted review sessions before exams to boost student success and exam performance.</li>
           </ul>
         </Card>
       </div>
 
-      {/* ───────────── ASU – UTO ───────────── */}
+      {/* ───────────── ASU – UTO ───────────── */}
       <div className="exp-item right">
         <Card>
-          <Logo src={asuLogo} alt="ASU UTO" />
-          <h3>University Technology Office — Technical Support Analyst</h3>
+          <Logo src={asuLogo} alt="ASU UTO" />
+          <h3>University Technology Office — Technical Support Analyst</h3>
           <small>Feb 2022 – May 2022 · Tempe, AZ</small>
           <ul>
-            <li>Provided real‑time classroom IT support; resolved 50 + tickets / week with 98 % CSAT.</li>
+            <li>Resolved urgent in-class IT issues under a 7-minute SLA to ensure uninterrupted lectures and lab sessions.</li>
+            <li>Performed preventive equipment checks and Zoom configurations to mitigate classroom tech failures.</li>
+            <li>Collaborated with faculty to tailor tech setups per lecture and improve instructional delivery.</li>
+            <li>Gathered user feedback to iterate on classroom technology workflows and reduce support incidents.</li>
           </ul>
         </Card>
       </div>
 
       <div className="exp-item left">
         <Card>
-          <Logo src={asuLogo} alt="ASU UTO" />
-          <h3>University Technology Office — Help Desk Support</h3>
+          <Logo src={asuLogo} alt="ASU UTO" />
+          <h3>University Technology Office — Help Desk Support</h3>
           <small>Feb 2022 – May 2022 · Tempe, AZ</small>
           <ul>
-            <li>Diagnosed hardware / software issues for faculty &amp; students; created knowledge‑base articles.</li>
+            <li>Delivered in-person and virtual support for faculty, students, and staff on software, hardware, and access issues.</li>
+            <li>Diagnosed a wide range of tech problems and escalated complex tickets to Tier 2 engineers.</li>
+            <li>Led awareness sessions to promote user independence and improve digital literacy across campus.</li>
           </ul>
         </Card>
       </div>
 
-      {/* ───────────── Tokyo Marine Spares Services ───────────── */}
+      {/* ───────────── Tokyo Marine Spares Services ───────────── */}
       <div className="exp-item right">
         <Card>
-          <Logo src={tmsLogo} alt="Tokyo Marine Spares Services" />
-          <h3>Tokyo Marine Spares Services — IT Support Specialist</h3>
+          <Logo src={tmsLogo} alt="Tokyo Marine Spares Services" />
+          <h3>Tokyo Marine Spares Services — IT Support Specialist</h3>
           <small>May 2021 – Aug 2021 · Kobe, Japan</small>
           <ul>
-            <li>Optimised work‑station setup &amp; network configs for 120 employees; scripted automated backups in Bash.</li>
+            <li>Optimised work‑station setup & network configs for 120 employees; scripted automated backups in Bash.</li>
           </ul>
         </Card>
       </div>
