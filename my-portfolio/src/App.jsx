@@ -7,6 +7,7 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Projects from './sections/Projects';
 import Education from './sections/Education';
+import Skills from "./sections/Skills/Skills";
 import Activities from './sections/Activities';
 import LinkedInActivity from './sections/LinkedInActivity';
 import Contact from './sections/Contact';
@@ -23,6 +24,7 @@ function App() {
         <Experience />
         <Projects />
         <Education />
+        <Skills />
         <Activities />
         <LinkedInActivity />
         <Contact />

@@ -1,0 +1,112 @@
+.sectionWrapper {
+  background-color: #0b0b0b;
+  width: 100%;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #00ffff;
+  margin: 8px auto 0;
+  border-radius: 4px;
+}
+
+.subText {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 3rem;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .skillsWrapper {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+.card {
+  background-color: #0f0f0f;
+  border: 1px solid #2d2d2d;
+  border-radius: 10px;
+  padding: 1.75rem;
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.03);
+}
+
+.cardTitle {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.iconWrapper {
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  font-size: 1.75rem;
+  color: #00ffff;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Skill bar additions */
+.skillItem {
+  margin-bottom: 1rem;
+}
+
+.skillLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.skillBarWrapper {
+  width: 100%;
+  background-color: #1f1f1f;
+  border-radius: 9999px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skillBar {
+  height: 100%;
+  background-color: #00ffff;
+  border-radius: 9999px;
+  transition: width 0.5s ease;
+}
