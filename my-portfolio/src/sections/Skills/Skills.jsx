@@ -25,7 +25,7 @@ import {
   SiSwift,
   SiNestjs,
   SiSumologic,
-  SiPlaywright
+  //SiPlaywright
 } from "react-icons/si";
 import { IoLanguage } from "react-icons/io5";
 
