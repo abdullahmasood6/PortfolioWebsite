@@ -96,7 +96,7 @@ const Skills = () => {
                 { flag: "/skills/japan.svg", label: "Japanese (Working knowledge)" },
                 { flag: "/skills/india.svg", label: "Urdu (Proficient)" },
                 { flag: "/skills/india.svg", label: "Hindi (Proficient)" },
-                { flag: "/skills/india.svg", label: "Kashmiri (Native)" }
+                { flag: "/skills/india.svg", label: "Kashmir (Native)" }
               ].map(({ flag, label }) => (
                 <li className={styles.skillLabel} key={label}>
                   <img src={flag} alt={label} /> {label}
