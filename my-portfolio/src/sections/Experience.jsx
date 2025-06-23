@@ -1,5 +1,5 @@
 /* ──────────────────────────────────────────────────────────────
-   Experience Section  ─ shows the eight real roles with logos
+   Experience Section  ─ shows the nine real roles with logos
    ──────────────────────────────────────────────────────────── */
 
 import React from "react";
@@ -21,12 +21,26 @@ const Experience = () => (
     <h2>Professional Experience</h2>
 
     <div className="timeline">
-      {/* ───────────── Gen ───────────── */}
+      {/* ───────────── Gen (Full-time) ───────────── */}
       <div className="exp-item left">
         <Card>
           <Logo src={genLogo} alt="Gen" />
+          <h3>Gen — Software Engineer (Full‑time)</h3>
+          <small>May 2025 – Present · Tempe, AZ</small>
+          <ul>
+            <li>Leading backend architecture for scalable privacy microservices using Python & PostgreSQL.</li>
+            <li>Spearheaded migration of legacy dashboards to a modular React + TypeScript stack.</li>
+            <li>Collaborated cross-functionally to deliver features impacting 2M+ users.</li>
+          </ul>
+        </Card>
+      </div>
+
+      {/* ───────────── Gen (Co-op) ───────────── */}
+      <div className="exp-item right">
+        <Card>
+          <Logo src={genLogo} alt="Gen" />
           <h3>Gen — Software Engineer (Co‑op)</h3>
-          <small>Aug 2024 – Present · Tempe, AZ</small>
+          <small>Aug 2024 – May 2025 · Tempe, AZ</small>
           <ul>
             <li>Developing secure Python micro‑services &amp; TS React dashboards surfacing real‑time privacy insights to 1 M+ users.</li>
             <li>Integrated Playwright test automation into CI, cutting regression time by 35 %.</li>
@@ -34,7 +48,7 @@ const Experience = () => (
         </Card>
       </div>
 
-      <div className="exp-item right">
+      <div className="exp-item left">
         <Card>
           <Logo src={genLogo} alt="Gen" />
           <h3>Gen — Software Engineer (Intern)</h3>
@@ -46,7 +60,7 @@ const Experience = () => (
       </div>
 
       {/* ───────────── ImmiCan ───────────── */}
-      <div className="exp-item left">
+      <div className="exp-item right">
         <Card>
           <Logo src={immicanLogo} alt="ImmiCan" />
           <h3>ImmiCan — Software Developer (Part‑time)</h3>
@@ -61,7 +75,7 @@ const Experience = () => (
       </div>
 
       {/* ───────────── ASU Teaching Assistant ───────────── */}
-      <div className="exp-item right">
+      <div className="exp-item left">
         <Card>
           <Logo src={asuLogo} alt="Arizona State University" />
           <h3>Arizona State University — Undergraduate TA (CSE 205 / Data Structures)</h3>
@@ -74,7 +88,7 @@ const Experience = () => (
         </Card>
       </div>
 
-      <div className="exp-item left">
+      <div className="exp-item right">
         <Card>
           <Logo src={asuLogo} alt="Arizona State University" />
           <h3>Arizona State University — Undergraduate TA (CSE 100 / C++)</h3>
@@ -88,7 +102,7 @@ const Experience = () => (
       </div>
 
       {/* ───────────── ASU – UTO ───────────── */}
-      <div className="exp-item right">
+      <div className="exp-item left">
         <Card>
           <Logo src={asuLogo} alt="ASU UTO" />
           <h3>University Technology Office — Technical Support Analyst</h3>
@@ -102,7 +116,7 @@ const Experience = () => (
         </Card>
       </div>
 
-      <div className="exp-item left">
+      <div className="exp-item right">
         <Card>
           <Logo src={asuLogo} alt="ASU UTO" />
           <h3>University Technology Office — Help Desk Support</h3>
@@ -116,7 +130,7 @@ const Experience = () => (
       </div>
 
       {/* ───────────── Tokyo Marine Spares Services ───────────── */}
-      <div className="exp-item right">
+      <div className="exp-item left">
         <Card>
           <Logo src={tmsLogo} alt="Tokyo Marine Spares Services" />
           <h3>Tokyo Marine Spares Services — IT Support Specialist</h3>

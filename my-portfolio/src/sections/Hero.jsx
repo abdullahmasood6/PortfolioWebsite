@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import profileImg from '../assets/profile.jpg';   // <-- new import
+import profileImg from '../assets/profile.jpg';
 
 const Hero = () => (
   <header className="hero" id="home">
@@ -7,13 +7,23 @@ const Hero = () => (
       {/* --- left : intro text --- */}
       <div className="intro">
         <h1>
-          Hi, I’m <span>Abdullah Masood</span>
+           Hey, I’m <span>Abdullah Masood</span>
         </h1>
 
         <p className="lead">
-          Software‑engineering intern @ Gen and senior CS student at ASU
-          (Class of 2025) — I craft full‑stack solutions that turn ideas into
-          reality.
+          <strong>Software Engineer · Full-Stack Developer · Builder</strong>
+        </p>
+
+        <p className="lead">
+          🏫 CS Graduate from Arizona State University (Class of 2025)
+          <br />
+          🚀 Magana Cum Laude - 5x deans list holder - 3x intern @Gen
+          <br />
+          💼 Full-time Software Engineer @ Gen (formerly NortonLifeLock)
+          <br />
+          ⚙️ I build sleek, scalable full-stack applications
+          <br />
+          📍 Based in Arizona · Working globally
         </p>
 
         <div className="btn-row">
