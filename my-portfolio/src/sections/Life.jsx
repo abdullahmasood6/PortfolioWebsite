@@ -12,8 +12,9 @@ const albums = [
   { title: 'Atlanta', thumbnail: '/albums/atlanta/cover.jpg', slug: 'atlanta' },
   { title: 'Niagara Falls', thumbnail: '/albums/niagara/cover.jpg', slug: 'niagara' },
   { title: 'Utah', thumbnail: '/albums/utah/cover.jpg', slug: 'utah' },
+  { title: 'Arizona', thumbnail: '/albums/arizona/cover.jpg', slug: 'arizona' },
+  { title: 'Grand Canyon', thumbnail: '/albums/grandcanyon/cover.jpg', slug: 'grandcanyon' },
 ];
-
 
 const Life = () => (
   <section id="life" className="section">

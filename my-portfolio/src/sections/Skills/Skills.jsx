@@ -66,12 +66,7 @@ const Skills = () => {
                 { icon: <FaJava color="#007396" />, label: "Java", width: "90%" },
                 { icon: <SiCplusplus color="#00599c" />, label: "C++", width: "75%" },
                 { icon: <FaTerminal color="#00ffff" />, label: "Bash", width: "70%" },
-                { icon: <SiSqlite color="#003B57" />, label: "SQL", width: "78%" },
-                {
-                  icon: <img src="/skills/playwright.png" alt="Playwright" />,
-                  label: "Playwright",
-                  width: "65%"
-                }
+                { icon: <SiSqlite color="#003B57" />, label: "SQL", width: "78%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
