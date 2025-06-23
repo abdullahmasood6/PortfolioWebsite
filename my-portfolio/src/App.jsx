@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import ParticlesBG from './components/ParticlesBG';
 import BackToTop from './components/BackToTop';
@@ -14,26 +16,41 @@ import Life from './sections/Life';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 
+import Album from './pages/Album'; // ✅ Make sure you create this file
+
 function App() {
   return (
-    <>
+    <Router>
       <Navbar />
       <ParticlesBG />
       <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Education />
-        <Skills />
-        <Activities />
-        <LinkedInActivity />
-        <Life />
-        <Contact />
+        <Routes>
+          {/* Single-page layout */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Experience />
+                <Projects />
+                <Education />
+                <Skills />
+                <Activities />
+                <LinkedInActivity />
+                <Life />
+                <Contact />
+              </>
+            }
+          />
+          
+          {/* Subpage for albums */}
+          <Route path="/albums/:slug" element={<Album />} />
+        </Routes>
       </main>
       <Footer />
       <BackToTop />
-    </>
+    </Router>
   );
 }
 
