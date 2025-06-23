@@ -8,8 +8,8 @@
 
 .album-grid img {
   width: 100%;
-  height: 250px; /* ✅ Set a fixed height */
-  object-fit: cover; /* ✅ Crops image while keeping it nicely scaled */
+  height: 250px;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
@@ -17,4 +17,17 @@
 
 .album-grid img:hover {
   transform: scale(1.03);
+}
+
+/* 🔽 Mobile responsiveness for Album */
+@media (max-width: 480px) {
+  .album-grid {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .album-grid img {
+    height: 200px;
+    border-radius: 10px;
+  }
 }
