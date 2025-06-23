@@ -10,9 +10,33 @@ const education = [
     degree: "B.S. Computer Science",
     duration: "2021 – 2025",
     details: [
-      "GPA 3.9 / 4.0",
-      "Dean’s List (5×)",
-      "Software Dev Club Officer",
+      <span key="gpa" style={{
+        background: "var(--accent)",
+        color: "#0b0b0b",
+        borderRadius: "16px",
+        padding: "0.3rem 1.1rem",
+        fontWeight: 700,
+        fontSize: "0.98rem",
+        marginRight: "0.5rem"
+      }}>GPA 3.7 / 4.0</span>,
+      <span key="honors" style={{
+        background: "var(--accent)",
+        color: "#0b0b0b",
+        borderRadius: "16px",
+        padding: "0.3rem 1.1rem",
+        fontWeight: 700,
+        fontSize: "0.98rem",
+        marginRight: "0.5rem"
+      }}>Magna Cum Laude</span>,
+      <span key="deans" style={{
+        background: "var(--accent)",
+        color: "#0b0b0b",
+        borderRadius: "16px",
+        padding: "0.3rem 1.1rem",
+        fontWeight: 700,
+        fontSize: "0.98rem",
+        marginRight: "0.5rem"
+      }}>Dean's List (5×)</span>,
       "Relevant Courses: Data Structures, Algorithms, DBMS, OS, AI, ML, Compilers, SE, Theory"
     ]
   },
