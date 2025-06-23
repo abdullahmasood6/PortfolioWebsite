@@ -4,7 +4,7 @@ import './Album.css';
 
 // 📸 Album image lists
 const albumImages = {
-  'san-francisco': ['/albums/sfo/1.jpg', '/albums/sfo/2.jpg'],
+  'san-francisco': Array.from({ length: 8 }, (_, i) => `/albums/sfo/${i + 1}.jpg`),
   'los-angeles': Array.from({ length: 11 }, (_, i) => `/albums/la/${i + 1}.jpg`),
   'tokyo': ['/albums/tokyo/1.jpg'],
   'nyc': ['/albums/nyc/1.jpg', '/albums/nyc/2.jpg'],
