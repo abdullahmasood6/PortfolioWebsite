@@ -9,8 +9,8 @@ const contactInfo = [
   {
     icon: '📧',
     title: 'Email',
-    value: 'abdullah@example.com',
-    link: 'mailto:abdullah@example.com',
+    value: 'ahakim1@asu.edu',
+    link: 'mailto:ahakim1@asu.edu',
     description: 'Drop me a line anytime'
   },
   {
