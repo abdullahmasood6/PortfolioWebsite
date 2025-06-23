@@ -32,8 +32,10 @@ const experiences = [
       "📊 Collaborated with senior engineers to enhance the Privacy Monitor product's backend architecture, logging observability, and API performance.",
       "🧩 Proactively learned new frameworks and debugging tools, contributing to team deliverables ahead of sprint deadlines as a self-starting junior engineer."
     ],
-    nonTechnicalSkills: ["Leadership", "Mentoring", "Cross-functional Collaboration", "Problem Solving", "Code Review", "System Architecture"],
-    skills: ["Java", "Spring Boot", "AWS", "Microservices", "REST APIs", "MySQL", "Docker", "Kubernetes", "Git", "Agile"]
+    skills: [
+      "Playwright", "Python", "NestJS", "AWS Lambda", "LangChain", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD",
+      "Node.js", "Jest", "ESLint", "Prettier", "MongoDB", "Redis", "GraphQL", "Jira", "Confluence", "Sentry", "OAuth", "JWT", "Linux", "Shell Scripting", "VS Code", "Postman"
+    ]
   },
   {
     icon: <FaBriefcase />, logo: genLogo,
@@ -50,8 +52,10 @@ const experiences = [
       "🔐 Refactored backend infrastructure for Privacy Monitor using TypeScript and Python, enhancing microservice modularity, log observability, and threat intelligence enrichment.",
       "🤝 Collaborated cross-functionally with privacy, threat intelligence, and platform teams to ship high-impact backend enhancements across LifeLock, Norton360, and ReputationDefender."
     ],
-    nonTechnicalSkills: ["Team Collaboration", "Agile Development", "Testing Strategy", "DevOps Integration", "Compliance Understanding"],
-    skills: ["Playwright", "Python", "NestJS", "AWS Lambda", "LangChain", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD"]
+    skills: [
+      "Playwright", "Python", "NestJS", "AWS Lambda", "LangChain", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD",
+      "Node.js", "Jest", "ESLint", "Prettier", "MongoDB", "Redis", "GraphQL", "Jira", "Confluence", "Sentry", "OAuth", "JWT", "Linux", "Shell Scripting", "VS Code", "Postman"
+    ]
   },
   {
     icon: <FaBriefcase />, logo: genLogo,
@@ -64,8 +68,10 @@ const experiences = [
       "⚙️ Designed and deployed RESTful microservices using NestJS and AWS Lambda for real-time profile scanning and report generation, reducing latency by 35%.",
       "Collaborated with senior engineers to improve the Privacy Monitor product's backend reliability and scalability."
     ],
-    nonTechnicalSkills: ["Code Quality", "Documentation", "Code Review", "Performance Optimization", "Security Awareness"],
-    skills: ["Playwright", "Python", "NestJS", "AWS Lambda", "REST APIs"]
+    skills: [
+      "Playwright", "Python", "NestJS", "AWS Lambda", "REST APIs",
+      "Node.js", "Jest", "ESLint", "Prettier", "MongoDB", "Redis", "GraphQL", "Jira", "Confluence", "Sentry", "OAuth", "JWT", "Linux", "Shell Scripting", "VS Code", "Postman"
+    ]
   },
   {
     icon: <FaBriefcase />, logo: immicanLogo,
@@ -82,8 +88,10 @@ const experiences = [
       "🛠️ Architected secure backend systems with field-level validation, token-based auth, and multi-role access control for scalable growth.",
       "🤝 Collaborated with cross-functional teams including data analysts and legal advisors to continuously refine platform usability and scoring logic."
     ],
-    nonTechnicalSkills: ["Leadership", "Communication", "Problem Solving", "Team Collaboration", "Feedback Delivery"],
-    skills: ["Django", "PostgreSQL", "REST APIs", "Socket.io", "GitHub Actions"]
+    skills: [
+      "Django", "PostgreSQL", "REST APIs", "Socket.io", "GitHub Actions", "React", "Next.js",
+      "Node.js", "Express.js", "Redux", "TypeScript", "Jest", "Docker", "Heroku", "AWS EC2", "Figma", "Swagger", "Yarn", "Nginx"
+    ]
   },
   {
     icon: <FaChalkboardTeacher />, logo: asuLogo,
@@ -99,8 +107,10 @@ const experiences = [
       "✅ Provided detailed code reviews and one-on-one mentorship, reinforcing software engineering best practices and code readability.",
       "🧠 Developed supplementary learning materials and practice problems"
     ],
-    nonTechnicalSkills: ["Teaching", "Mentoring", "Communication", "Patience", "Student Support", "Feedback Delivery"],
-    skills: ["Java", "Data Structures", "Object-Oriented Design", "Teaching", "Mentoring", "Problem Solving", "Communication"]
+    skills: [
+      "Java", "Data Structures", "Object-Oriented Design",
+      "JUnit", "Eclipse", "Git", "Maven", "UML", "LeetCode", "Repl.it"
+    ]
   },
   {
     icon: <FaChalkboardTeacher />, logo: asuLogo,
@@ -116,8 +126,10 @@ const experiences = [
       "🎯 Mentored students in applying core programming concepts to practical problems, laying a strong foundation for future CS courses.",
       "🧠 Developed supplementary learning materials and practice problems"
     ],
-    nonTechnicalSkills: ["Teaching", "Communication", "Patience", "Problem Solving", "Student Engagement", "Material Development"],
-    skills: ["C++", "Object-Oriented Programming", "Design Patterns", "Teaching", "Mentoring", "Problem Solving", "Communication"]
+    skills: [
+      "C++", "Object-Oriented Programming", "Design Patterns",
+      "GDB", "Valgrind", "CLion", "Git", "CMake", "LeetCode", "Repl.it"
+    ]
   },
   {
     icon: <FaTools />, logo: asuLogo,
@@ -133,8 +145,10 @@ const experiences = [
       "🏅 Recognized for consistently achieving sub-7-minute resolution metrics, contributing to smoother academic delivery across campus.",
       "🧠 Developed supplementary learning materials and practice problems"
     ],
-    nonTechnicalSkills: ["Customer Service", "Problem Resolution", "Documentation", "Team Collaboration", "Technical Communication"],
-    skills: ["Technical Support", "Troubleshooting", "AV Systems", "Classroom Technology", "Faculty Support"]
+    skills: [
+      "Technical Support", "Troubleshooting", "AV Systems", "Classroom Technology",
+      "Windows", "macOS", "Linux", "Active Directory", "Zoom", "Slack", "ServiceNow", "Remote Desktop", "Office 365", "Google Workspace"
+    ]
   },
   {
     icon: <FaTools />, logo: asuLogo,
@@ -151,8 +165,10 @@ const experiences = [
       "🛡️ Logged and tracked incident trends using internal ticketing system, helping the IT office prioritize improvements in AV infrastructure.",
       "🧠 Developed supplementary learning materials and practice problems"
     ],
-    nonTechnicalSkills: ["Customer Service", "Problem Resolution", "Ticket Management", "Communication", "Time Management"],
-    skills: ["Technical Support", "Troubleshooting", "Digital Literacy", "Tech Onboarding", "Incident Management"]
+    skills: [
+      "Technical Support", "Troubleshooting", "Digital Literacy", "Tech Onboarding", "Incident Management",
+      "Windows", "macOS", "Linux", "Active Directory", "Zoom", "Slack", "ServiceNow", "Remote Desktop", "Office 365", "Google Workspace"
+    ]
   },
   {
     icon: <FaTools />, logo: tmsLogo,
@@ -169,8 +185,10 @@ const experiences = [
       "📉 Minimized operational downtime by streamlining IT support workflows and reducing average issue resolution time by 30%.",
       "🧠 Developed supplementary learning materials and practice problems"
     ],
-    nonTechnicalSkills: ["International Communication", "Cross-cultural Collaboration", "Time Zone Management", "Documentation", "Process Improvement"],
-    skills: ["IT Support", "System Administration", "Network Configuration", "Bash Scripting", "Antivirus Deployment"]
+    skills: [
+      "IT Support", "System Administration", "Network Configuration", "Bash Scripting", "Antivirus Deployment",
+      "Windows Server", "Linux", "Bash", "PowerShell", "VMware", "Cisco", "Firewall", "VPN", "Remote Desktop", "MS Office", "Backup Exec"
+    ]
   }
 ];
 
@@ -261,27 +279,6 @@ const Experience = () => (
                   <li key={i} style={{ marginBottom: 4 }}>{item}</li>
                 ))}
               </ul>
-              <div style={skillsSectionStyle}>
-                <div style={skillsTitleStyle}>Non-Technical Skills Used</div>
-                <div style={skillsContainerStyle}>
-                  {exp.nonTechnicalSkills.map((skill, idx) => (
-                    <span 
-                      key={idx} 
-                      style={nonTechnicalSkillBadgeStyle}
-                      onMouseEnter={(e) => {
-                        e.target.style.background = "rgba(255, 255, 255, 0.2)";
-                        e.target.style.transform = "translateY(-1px)";
-                      }}
-                      onMouseLeave={(e) => {
-                        e.target.style.background = "rgba(255, 255, 255, 0.1)";
-                        e.target.style.transform = "translateY(0)";
-                      }}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
               <div style={skillsSectionStyle}>
                 <div style={skillsTitleStyle}>Technical Skills Used</div>
                 <div style={skillsContainerStyle}>

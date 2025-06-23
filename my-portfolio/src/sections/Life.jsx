@@ -19,16 +19,26 @@ const albums = [
 const Life = () => (
   <section id="life" className="section">
     <h2>Photos & Life</h2>
-    <p style={{ textAlign: 'center', color: 'var(--text-mid)', marginBottom: '2rem' }}>
+    <p style={{ textAlign: 'center', color: 'var(--text-mid)', marginBottom: '1rem' }}>
       A glimpse into my personal life, memories, and milestones that shaped who I am today.
     </p>
-
+    <p style={{ textAlign: 'center', color: 'var(--accent)', fontWeight: 600, marginBottom: '2rem' }}>
+      Click a city to view its photo album
+    </p>
     {/* ✅ Display albums */}
     <div className="life-gallery">
       {albums.map((album, index) => (
         <Link to={`/albums/${album.slug}`} key={index} className="photo-card">
           <img src={album.thumbnail} alt={album.title} />
           <p>{album.title}</p>
+          <span style={{
+            display: 'inline-block',
+            marginTop: '0.4rem',
+            color: 'var(--accent)',
+            fontWeight: 600,
+            fontSize: '0.98rem',
+            letterSpacing: '0.5px'
+          }}>View Photos</span>
         </Link>
       ))}
     </div>

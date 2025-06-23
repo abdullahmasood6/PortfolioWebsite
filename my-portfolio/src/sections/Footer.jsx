@@ -5,10 +5,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { name: 'GitHub', url: 'https://github.com/abdullah', icon: '🐙' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/abdullah-masood', icon: '💼' },
-    { name: 'Twitter', url: 'https://twitter.com/', icon: '🐦' },
-    { name: 'Email', url: 'mailto:abdullah@example.com', icon: '✉️' }
+    { name: 'Portfolio', url: 'https://abdullah-masood.com', icon: '🌐' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/abdullah-masood1/', icon: '💼' },
+    { name: 'Instagram', url: 'https://instagram.com/', icon: '📸' },
+    { name: 'Email', url: 'mailto:ahakim1@asu.edu', icon: '✉️' }
   ];
 
   const quickLinks = [

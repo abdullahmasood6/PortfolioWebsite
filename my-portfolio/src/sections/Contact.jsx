@@ -31,28 +31,28 @@ const contactInfo = [
 
 const socialLinks = [
   {
-    name: 'GitHub',
-    url: 'https://github.com/abdullah',
-    icon: '🐙',
-    color: '#333'
-  },
-  {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/abdullah-masood',
+    url: 'https://www.linkedin.com/in/abdullah-masood1/',
     icon: '💼',
     color: '#0077b5'
   },
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/',
-    icon: '🐦',
-    color: '#1DA1F2'
-  },
-  {
     name: 'Portfolio',
-    url: 'https://abdullah-portfolio.com',
+    url: 'https://abdullah-masood.com',
     icon: '🌐',
     color: '#00c8c8'
+  },
+  {
+    name: 'Instagram',
+    url: 'https://instagram.com/',
+    icon: '📸',
+    color: '#E1306C'
+  },
+  {
+    name: 'Email',
+    url: 'mailto:ahakim1@asu.edu',
+    icon: '✉️',
+    color: '#D44638'
   }
 ];
 
