@@ -1,7 +1,8 @@
 import LinkedInPost from '../components/LinkedInPost';
 
 const POSTS = [
-  'urn:li:activity:7324486737458536448', // Capstone milestone
+  'urn:li:activity:7334929855941091328',
+  'urn:li:activity:7324486737458536448', 
   'urn:li:activity:7283910253056815104'  // Dean’s List
 ];
 
