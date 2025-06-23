@@ -5,22 +5,15 @@ import './Life.css';
 
 // ✅ Album data defined here
 const albums = [
-  {
-    title: 'San Francisco',
-    thumbnail: '/albums/sfo/cover.jpg',
-    slug: 'san-francisco',
-  },
-  {
-    title: 'Los Angeles',
-    thumbnail: '/albums/la/cover.jpg',
-    slug: 'los-angeles',
-  },
-  {
-    title: 'Tokyo',
-    thumbnail: '/albums/tokyo/cover.jpg',
-    slug: 'tokyo',
-  },
+  { title: 'San Francisco', thumbnail: '/albums/sfo/cover.jpg', slug: 'san-francisco' },
+  { title: 'Los Angeles', thumbnail: '/albums/la/cover.jpg', slug: 'los-angeles' },
+  { title: 'Tokyo', thumbnail: '/albums/tokyo/cover.jpg', slug: 'tokyo' },
+  { title: 'New York City', thumbnail: '/albums/nyc/cover.jpg', slug: 'nyc' },
+  { title: 'Atlanta', thumbnail: '/albums/atlanta/cover.jpg', slug: 'atlanta' },
+  { title: 'Niagara Falls', thumbnail: '/albums/niagara/cover.jpg', slug: 'niagara' },
+  { title: 'Utah', thumbnail: '/albums/utah/cover.jpg', slug: 'utah' },
 ];
+
 
 const Life = () => (
   <section id="life" className="section">
