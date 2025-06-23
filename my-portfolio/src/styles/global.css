@@ -265,7 +265,7 @@ a:hover {
   position: relative;
 }
 .exp-item.left {
-  text-align: right;
+  text-align: left;
 }
 .exp-item.right {
   left: 52%;
@@ -282,7 +282,10 @@ a:hover {
   right: -9px;
 }
 .exp-item.right::before {
-  left: -9px;
+  left: -30px;
+}
+.exp-item.left::before {
+  right: -30px;
 }
 .exp-item .card {
   padding: 1.35rem;
