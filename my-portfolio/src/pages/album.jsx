@@ -37,8 +37,6 @@ const Album = () => {
               src={src}
               alt={`Photo ${idx + 1}`}
               style={{
-                width: '100%',
-                maxWidth: '400px',
                 margin: '10px auto',
                 borderRadius: '12px',
                 display: 'block',
