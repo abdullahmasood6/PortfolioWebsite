@@ -29,3 +29,10 @@
   color: var(--text-light);
   font-size: 0.95rem;
 }
+
+@media (max-width: 600px) {
+  .photo-card img {
+    max-width: 95vw;
+    margin-bottom: 1rem;
+  }
+}
