@@ -12,13 +12,14 @@ const projects = [
     ]
   },
   {
-    title: "Broker Scan Monitoring Agent",
+    title: "Self‑Healing Broker Monitoring Agent",
     date: "2024 – 2025",
     description:
-      "Created an agent-based monitoring solution to detect workflow failures, flag recurring issues, and improve visibility into production scan health — shortening time-to-fix for broker regressions.",
+      "Built an AI agent (OpenAI APIs) that monitors broker scan behavior, detects workflow failures and recurring issues, and proposes fixes for breaking scrapers — improving visibility into production scan health and shortening time-to-fix for broker regressions.",
     tech: [
-      "TypeScript", "Node.js", "NestJS", "AI Agents", "OpenAI",
-      "Microservices", "AWS", "Datadog", "Observability", "Python", "Git"
+      "TypeScript", "Node.js", "NestJS", "AI Agents", "OpenAI", "LLMs",
+      "Playwright", "Browser Automation", "Microservices",
+      "AWS", "Datadog", "Observability", "Python", "Git"
     ]
   },
   {
@@ -39,16 +40,6 @@ const projects = [
     tech: [
       "TypeScript", "Node.js", "NestJS", "Playwright", "Browser Automation",
       "Web Scraping", "REST APIs", "AWS", "Python", "Git"
-    ]
-  },
-  {
-    title: "Self‑Healing Scraper Agent (Gen)",
-    date: "2024 – 2025",
-    description:
-      "Prototyped an AI agent using OpenAI APIs to detect scraper breakages and propose fixes, reducing manual intervention and improving scraping uptime as broker sites changed.",
-    tech: [
-      "Python", "OpenAI", "AI Agents", "LLMs", "Playwright",
-      "Browser Automation", "Web Scraping", "TypeScript", "Git"
     ]
   },
   {
