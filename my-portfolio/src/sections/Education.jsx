@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUniversity, FaSchool, FaGlobeAsia } from "react-icons/fa";
+import { FaUniversity } from "react-icons/fa";
 import Card from "../components/Card";
 
 const education = [
@@ -8,7 +8,7 @@ const education = [
     icon: <FaUniversity />,
     school: "Arizona State University",
     degree: "B.S. Computer Science",
-    duration: "2021 – 2025",
+    duration: "Aug 2021 – May 2025",
     details: [
       <span key="gpa" style={{
         background: "var(--accent)",
@@ -37,42 +37,9 @@ const education = [
         fontSize: "0.98rem",
         marginRight: "0.5rem"
       }}>Dean's List (5×)</span>,
-      "Relevant Courses: Data Structures, Algorithms, DBMS, OS, AI, ML, Compilers, SE, Theory"
+      "Relevant Coursework: Software Engineering, DSA, OOP, DBMS, Principles of Programming, Computer Human Interaction"
     ]
   },
-  {
-    logo: "/education/welkin.jpg",
-    icon: <FaSchool />,
-    school: "SRM Welkin Higher Secondary School",
-    degree: "High School Diploma",
-    duration: "2014 – 2021",
-    details: [
-      "Science Stream (Physics, Chemistry, Math)",
-      "Class President, Vice-President",
-      "Lab Monitor, Extracurricular Head"
-    ]
-  },
-  {
-    logo: "/education/sjs.jpg",
-    icon: <FaSchool />,
-    school: "Saint Joseph Baramulla",
-    degree: "Middle School Diploma",
-    duration: "2012 – 2014",
-    details: [
-      "Completed middle school education"
-    ]
-  },
-  {
-    logo: "/education/giis.jpg",
-    icon: <FaGlobeAsia />,
-    school: "GIIS, Tokyo",
-    degree: "Middle School Diploma",
-    duration: "2006 – 2012",
-    details: [
-      "Completed early schooling in Japan",
-      "Studied in an international curriculum"
-    ]
-  }
 ];
 
 const Education = () => (

@@ -7,23 +7,23 @@ const Hero = () => (
       {/* --- left : intro text --- */}
       <div className="intro">
         <h1>
-           Hey, I’m <span>Abdullah Masood</span>
+           Hey, I’m <span>Abdullah Masood Hakim</span>
         </h1>
 
         <p className="lead">
-          <strong>Software Engineer · Full-Stack Developer · Builder</strong>
+          <strong>Software Engineer · Backend & Automation · Full‑Stack</strong>
         </p>
 
         <p className="lead">
-          🏫 CS Graduate from Arizona State University (Class of 2025)
+          🏫 B.S. Computer Science, Arizona State University (Aug 2021 – May 2025)
           <br />
-          🚀 Magana Cum Laude - 5x deans list holder - 3x intern @Gen
+          🚀 Magna Cum Laude · GPA 3.7 · Dean’s List (5×)
           <br />
-          💼 Full-time Software Engineer @ Gen (formerly NortonLifeLock)
+          💼 Software Engineer @ Gen (Identity & Privacy / Privacy Monitor)
           <br />
-          ⚙️ I build sleek, scalable full-stack applications
+          ⚙️ I build scalable backend systems, scrapers, and reliability tooling
           <br />
-          📍 Based in Arizona · Working globally
+          📍 Tempe, AZ · Open to remote opportunities
         </p>
 
         <div className="btn-row">

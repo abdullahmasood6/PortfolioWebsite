@@ -32,7 +32,7 @@ const contactInfo = [
 const socialLinks = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/abdullah-masood1/',
+    url: 'https://www.linkedin.com/in/abdullahmasood1/',
     icon: '💼',
     color: '#0077b5'
   },
@@ -41,12 +41,6 @@ const socialLinks = [
     url: 'https://abdullah-masood.com',
     icon: '🌐',
     color: '#00c8c8'
-  },
-  {
-    name: 'Instagram',
-    url: 'https://instagram.com/',
-    icon: '📸',
-    color: '#E1306C'
   },
   {
     name: 'Email',

@@ -23,9 +23,9 @@ const About = () => (
     <h2>About Me</h2>
     <div style={aboutStyle}>
       <div style={{ fontSize: "1.1rem", lineHeight: 1.7 }}>
-        I'm <span style={highlight}>Abdullah Masood</span> — a <span style={highlight}>Software Engineer</span> at <span style={highlight}>Gen</span>, where I build security and automation tools that help protect millions of users' identities online.<br /><br />
-        I work in the <span style={highlight}>Identity & Privacy</span> division, contributing to <span style={highlight}>Privacy Monitor</span> — a core product integrated into platforms like LifeLock and ReputationDefender. My focus lies in crafting backend systems that simplify and strengthen digital privacy at scale.<br /><br />
-        Outside of work, I live for movement and exploration. Whether I'm hitting the gym, playing competitive field hockey, shooting a game of snooker, or planning the next escape, I'm always chasing that next rush. I've clocked <span style={highlight}>1,600+ miles in 3 days</span>, explored <span style={highlight}>3 cities over a single weekend</span>, and never miss a chance to hit the road and discover something new.
+        I'm <span style={highlight}>Abdullah Masood Hakim</span> — a <span style={highlight}>Software Engineer</span> at <span style={highlight}>Gen</span> on the <span style={highlight}>Identity & Privacy</span> team. I build backend systems and automation across multiple privacy products, including <span style={highlight}>Privacy Monitor Assistant</span>, <span style={highlight}>Online Account Cleaner (OAC)</span>, and the <span style={highlight}>Unsubscribe Service</span>.<br /><br />
+        My work spans <span style={highlight}>Playwright‑based data broker scraping</span>, <span style={highlight}>NestJS + AWS Lambda</span> microservices, and reliability tooling (testing + CI) to keep pipelines resilient as sites change. I’ve also prototyped a <span style={highlight}>self‑healing AI agent</span> using <span style={highlight}>OpenAI APIs</span> to automatically recover from scraper breakages and reduce manual intervention.<br /><br />
+        Outside of engineering, I’m big on movement and exploration — gym, competitive field hockey, snooker, and road trips. I like learning fast, shipping iteratively, and building things that feel practical and durable.
       </div>
       <blockquote style={{
         borderLeft: "4px solid var(--accent)",
@@ -36,7 +36,7 @@ const About = () => (
         background: "rgba(0,200,200,0.05)",
         borderRadius: 8
       }}>
-        "Curiosity, movement, and building things that matter — that's my fuel."
+        "Build durable systems, learn fast, and ship what matters."
       </blockquote>
     </div>
     <style>{`

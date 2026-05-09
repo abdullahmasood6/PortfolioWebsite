@@ -2,16 +2,25 @@ import Card from '../components/Card';
 
 const projects = [
   {
-    title: "Project Banking System (CSE 205)",
-    date: "Jul 2022 – Aug 2022",
-    description: "Team‑built GUI banking application in Java. Included user authentication, CRUD for accounts & transactions, and role‑based dashboards.",
-    tech: ["Java", "Swing"]
+    title: "Self‑Healing Scraper Agent (Gen)",
+    date: "2024 – 2025",
+    description:
+      "Prototyped an AI agent using OpenAI APIs to detect scraper breakages and propose fixes, reducing manual intervention and improving scraping uptime as broker sites changed.",
+    tech: ["OpenAI", "Playwright", "Python"]
   },
   {
-    title: "Project Spynn — Autonomous Driving Car",
-    date: "Sep 2021 – Dec 2021",
-    description: "Designed an autonomous Lego car to navigate a maze and pick up a passenger. MATLAB algorithm + ultrasonic sensors achieved precise obstacle detection; presented at ASU showcase.",
-    tech: ["MATLAB", "Lego Mindstorms"]
+    title: "Privacy Monitor Backend (Gen)",
+    date: "2024 – Present",
+    description:
+      "Built and maintained serverless backend services for profile scanning and breach reporting with NestJS + AWS Lambda. Added CI regression testing to catch DOM/layout changes and improved reliability by 35%.",
+    tech: ["NestJS", "AWS Lambda", "TypeScript", "GitHub Actions"]
+  },
+  {
+    title: "ImmiScore Platform (ImmiCan)",
+    date: "2024 – 2025",
+    description:
+      "Led backend development of Django REST APIs and PostgreSQL services to compute and persist ImmiScore from dynamic user profiles, plus dashboards to visualize readiness and next steps.",
+    tech: ["Django", "PostgreSQL", "React", "Next.js"]
   }
 ];
 
@@ -29,7 +38,7 @@ const badgeStyle = {
 
 const Projects = () => (
   <section id="projects" className="section">
-    <h2>Projects</h2>
+    <h2>Selected Work</h2>
     <div style={{
       display: "grid",
       gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",

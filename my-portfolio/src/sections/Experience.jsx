@@ -27,13 +27,13 @@ const experiences = [
     details: [
       "🔍 Joined as an entry-level developer on the Identity & Privacy team and quickly contributed to Playwright-based web scrapers used to detect leaked PII across 200+ data broker sites.",
       "⚙️ Built and maintained backend microservices using NestJS and AWS Lambda, supporting real-time breach detection and user profile analysis.",
-      "🧠 Designed a proof-of-concept AI agent using LangChain + OpenAI APIs to fix breaking scraper changes, reducing manual intervention and improving scraping uptime.",
+      "🧠 Designed a proof-of-concept AI agent using OpenAI APIs to fix breaking scraper changes, reducing manual intervention and improving scraping uptime.",
       "🧪 Integrated automated testing pipelines into the GitHub Actions CI/CD process to catch DOM and layout changes, improving overall reliability by 35%.",
       "📊 Collaborated with senior engineers to enhance the Privacy Monitor product's backend architecture, logging observability, and API performance.",
       "🧩 Proactively learned new frameworks and debugging tools, contributing to team deliverables ahead of sprint deadlines as a self-starting junior engineer."
     ],
     skills: [
-      "Playwright", "Python", "NestJS", "AWS Lambda", "LangChain", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD",
+      "Playwright", "Python", "NestJS", "AWS Lambda", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD",
       "Node.js", "Jest", "ESLint", "Prettier", "MongoDB", "Redis", "GraphQL", "Jira", "Confluence", "Sentry", "OAuth", "JWT", "Linux", "Shell Scripting", "VS Code", "Postman"
     ]
   },
@@ -46,14 +46,14 @@ const experiences = [
     details: [
       "🔍 Engineered resilient web scraping pipelines using Playwright, Python, and rotating proxies to analyze 200+ personal data broker sites, automating detection of leaked PII like names, SSNs, and addresses.",
       "⚙️ Designed and deployed serverless RESTful microservices using NestJS and AWS Lambda for real-time breach report generation, reducing latency by 35% and supporting millions of user requests.",
-      "🧠 Developed a self-healing AI agent using LangChain and OpenAI APIs to detect broken data dependencies and auto-fix scraping scripts on-the-fly, minimizing maintenance downtime.",
+      "🧠 Developed a self-healing AI agent using OpenAI APIs to detect broken data dependencies and auto-fix scraping scripts on-the-fly, minimizing maintenance downtime.",
       "🔬 Created a PII correlation engine that enriched partial user data with metadata such as breach source, timestamp, and severity — increasing detection accuracy by 40%.",
       "📦 Integrated Playwright-based automated test suites into GitHub Actions CI pipeline, accelerating regression testing and improving deployment reliability by 35%.",
       "🔐 Refactored backend infrastructure for Privacy Monitor using TypeScript and Python, enhancing microservice modularity, log observability, and threat intelligence enrichment.",
       "🤝 Collaborated cross-functionally with privacy, threat intelligence, and platform teams to ship high-impact backend enhancements across LifeLock, Norton360, and ReputationDefender."
     ],
     skills: [
-      "Playwright", "Python", "NestJS", "AWS Lambda", "LangChain", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD",
+      "Playwright", "Python", "NestJS", "AWS Lambda", "OpenAI", "TypeScript", "GitHub Actions", "CI/CD",
       "Node.js", "Jest", "ESLint", "Prettier", "MongoDB", "Redis", "GraphQL", "Jira", "Confluence", "Sentry", "OAuth", "JWT", "Linux", "Shell Scripting", "VS Code", "Postman"
     ]
   },
