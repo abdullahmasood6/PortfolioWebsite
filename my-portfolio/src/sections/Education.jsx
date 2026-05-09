@@ -1,5 +1,5 @@
 import React from "react";
-import { FaUniversity } from "react-icons/fa";
+import { FaUniversity, FaSchool, FaGlobeAsia } from "react-icons/fa";
 import Card from "../components/Card";
 
 const education = [
@@ -41,6 +41,41 @@ const education = [
       "Relevant Coursework: Software Engineering, DSA, OOP, DBMS, Principles of Programming, Computer Human Interaction"
     ]
   },
+  {
+    logo: "/education/welkin.jpg",
+    icon: <FaSchool />,
+    school: "SRM Welkin Higher Secondary School",
+    degree: "High School Diploma",
+    duration: "2014 – 2021",
+    location: "Sopore, India",
+    details: [
+      "Science Stream: Physics, Chemistry, Mathematics",
+      "Class President & Vice‑President",
+      "Lab Monitor and Extracurricular Head"
+    ]
+  },
+  {
+    logo: "/education/sjs.jpg",
+    icon: <FaSchool />,
+    school: "Saint Joseph Baramulla",
+    degree: "Middle School",
+    duration: "2012 – 2014",
+    location: "Baramulla, India",
+    details: [
+      "Completed middle school education"
+    ]
+  },
+  {
+    logo: "/education/giis.jpg",
+    icon: <FaGlobeAsia />,
+    school: "Global Indian International School (GIIS), Tokyo",
+    degree: "Early Schooling",
+    duration: "2006 – 2012",
+    location: "Tokyo, Japan",
+    details: [
+      "Completed early schooling under an international curriculum"
+    ]
+  }
 ];
 
 const Education = () => (

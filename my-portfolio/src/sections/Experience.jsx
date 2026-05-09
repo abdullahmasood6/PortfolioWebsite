@@ -8,6 +8,7 @@ import { FaBriefcase, FaChalkboardTeacher } from "react-icons/fa";
 
 /* logo images  (⚠ match file‑system names exactly) */
 import genLogo      from "../experience/gen.png";
+import immicanLogo  from "../experience/immican.png";
 import asuLogo      from "../experience/asu.jpg";
 
 const experiences = [
@@ -26,8 +27,11 @@ const experiences = [
       "Continuously monitored and debugged production workflows, identified root causes quickly, and deployed fixes to maintain stable scan execution."
     ],
     skills: [
-      "TypeScript", "JavaScript", "NestJS", "Playwright", "Python", "Datadog",
-      "Web scraping", "AI agents", "AWS", "CI/CD"
+      "TypeScript", "JavaScript", "Node.js", "NestJS", "REST APIs", "Microservices",
+      "Playwright", "Browser Automation", "Python", "Web Scraping",
+      "Anti-bot Evasion", "Proxy Management", "AI Agents",
+      "AWS", "Docker", "CI/CD", "GitHub Actions",
+      "Datadog", "Observability", "Production Debugging", "Git"
     ]
   },
   {
@@ -44,8 +48,30 @@ const experiences = [
       "Built an Unsubscribe Service proof‑of‑concept; started with 75 supported domains and expanded coverage to 200+ domains."
     ],
     skills: [
-      "TypeScript", "JavaScript", "NestJS", "AWS",
-      "Playwright", "Python", "Datadog", "CI/CD"
+      "TypeScript", "JavaScript", "Node.js", "NestJS", "REST APIs", "Microservices",
+      "Playwright", "Browser Automation", "Web Scraping", "Python",
+      "AI Agents", "OpenAI",
+      "AWS", "CI/CD", "GitHub Actions",
+      "Datadog", "Observability", "Git"
+    ]
+  },
+  {
+    icon: <FaBriefcase />, logo: immicanLogo,
+    company: "ImmiCan",
+    role: "Software Developer — Team Lead (Part‑time)",
+    date: "Aug 2024 – May 2025",
+    location: "Remote",
+    details: [
+      "Led backend development of Django REST APIs and PostgreSQL microservices to compute and persist ImmiScore based on dynamic user profiles.",
+      "Built React and Next.js dashboards to visualize immigration readiness scores, roadmap graphs, and real‑time feedback on profile completeness.",
+      "Integrated socket.io for bi‑directional real‑time communication between users and service providers in domains like legal aid and healthcare.",
+      "Implemented CI/CD pipelines with GitHub Actions for automated testing, staging, and sprint‑based deployment cycles.",
+      "Architected secure backend systems with field‑level validation, token‑based auth, and multi‑role access control for scalable growth.",
+      "Collaborated with cross‑functional teams including data analysts and legal advisors to continuously refine platform usability and scoring logic."
+    ],
+    skills: [
+      "Django", "PostgreSQL", "REST APIs", "Socket.io", "React", "Next.js",
+      "Node.js", "TypeScript", "Docker", "GitHub Actions", "AWS EC2"
     ]
   },
   {
@@ -62,7 +88,11 @@ const experiences = [
       "Orchestrated specialized exam review and preparation sessions, emphasizing strategic problem solving and core programming paradigms."
     ],
     skills: [
-      "C++", "Java", "Data Structures", "Object‑Oriented Programming", "Teaching"
+      "C++", "Java", "Data Structures", "Algorithms", "Recursion",
+      "Object‑Oriented Programming", "Pointers & Memory Management",
+      "Debugging", "GDB", "Git", "Linux",
+      "Code Review", "Mentorship", "Curriculum Design",
+      "Public Speaking", "Problem Solving", "Teaching"
     ]
   }
 ];

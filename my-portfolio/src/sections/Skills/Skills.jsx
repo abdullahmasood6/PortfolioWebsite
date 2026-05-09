@@ -8,16 +8,17 @@ import {
   FaJs,
   FaReact,
   FaNode,
-  FaBootstrap,
-  FaTerminal
+  FaTerminal,
+  FaDatabase,
+  FaAws
 } from "react-icons/fa";
 import {
+  SiC,
   SiCplusplus,
   SiPostgresql,
   SiMongodb,
   SiRedis,
-  SiGraphql,
-  SiAmazon,
+  SiGithub,
   SiGithubactions,
   SiJest,
   SiEslint,
@@ -26,17 +27,26 @@ import {
   SiJira,
   SiConfluence,
   SiDatadog,
-  SiTailwindcss,
   SiExpress,
-  SiP5Dotjs,
   SiNextdotjs,
   SiTypescript,
   SiHtml5,
   SiCss3,
   SiDjango,
   SiNestjs,
-  SiSumologic
+  SiSumologic,
+  SiAmazonec2,
+  SiAmazonecs,
+  SiAmazons3,
+  SiAmazondynamodb,
+  SiAmazoncloudwatch,
+  SiAmazoniam,
+  SiAmazonapigateway,
+  SiAmazonsqs,
+  SiAmazonrds,
+  SiAwslambda
 } from "react-icons/si";
+import { BsBrowserChrome } from "react-icons/bs";
 import { IoLanguage } from "react-icons/io5";
 
 import styles from "./Skills.module.css";
@@ -67,14 +77,14 @@ const Skills = () => {
             <ul className={styles.list}>
               {[
                 { icon: <FaJava color="#007396" />, label: "Java", width: "90%" },
-                { icon: <SiPostgresql color="#336791" />, label: "SQL", width: "82%" },
+                { icon: <FaDatabase color="#00c8c8" />, label: "SQL", width: "82%" },
                 { icon: <FaJs color="#f0db4f" />, label: "JavaScript", width: "86%" },
                 { icon: <SiTypescript color="#3178c6" />, label: "TypeScript", width: "86%" },
-                { icon: <FaTerminal color="#00ffff" />, label: "NestJS", width: "80%" },
-                { icon: <FaTerminal color="#00ffff" />, label: "Playwright", width: "82%" },
+                { icon: <SiNestjs color="#ea2845" />, label: "NestJS", width: "80%" },
+                { icon: <BsBrowserChrome color="#2EAD33" />, label: "Playwright", width: "82%" },
                 { icon: <FaPython color="#3776ab" />, label: "Python", width: "86%" },
                 { icon: <FaNode color="#3c873a" />, label: "Node.js", width: "82%" },
-                { icon: <SiCplusplus color="#00599c" />, label: "C", width: "70%" },
+                { icon: <SiC color="#A8B9CC" />, label: "C", width: "70%" },
                 { icon: <SiCplusplus color="#00599c" />, label: "C++", width: "75%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
@@ -103,11 +113,7 @@ const Skills = () => {
                 { icon: <SiExpress />, label: "Express.js", width: "78%" },
                 { icon: <SiNestjs color="#ea2845" />, label: "NestJS", width: "82%" },
                 { icon: <SiDjango color="#092e20" />, label: "Django", width: "78%" },
-                { icon: <SiTailwindcss color="#06B6D4" />, label: "Tailwind CSS", width: "85%" },
-                { icon: <FaBootstrap color="#7952B3" />, label: "Bootstrap", width: "75%" },
-                { icon: <SiP5Dotjs color="#ED225D" />, label: "p5.js", width: "68%" },
-                { icon: <FaTerminal color="#00ffff" />, label: "Playwright", width: "84%" },
-                { icon: <SiGraphql color="#e10098" />, label: "GraphQL", width: "72%" }
+                { icon: <BsBrowserChrome color="#2EAD33" />, label: "Playwright", width: "84%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
@@ -129,13 +135,45 @@ const Skills = () => {
             <h3 className={styles.cardTitle}>Tools</h3>
             <ul className={styles.list}>
               {[
-                { icon: <FaTerminal color="#00ffff" />, label: "Cursor", width: "86%" },
-                { icon: <SiGithubactions />, label: "GitHub", width: "85%" },
-                { icon: <SiGithubactions />, label: "GitHub Actions", width: "80%" },
+                { icon: <FaCode color="#00c8c8" />, label: "Cursor", width: "86%" },
+                { icon: <SiGithub color="#ffffff" />, label: "GitHub", width: "85%" },
+                { icon: <SiGithubactions color="#2088FF" />, label: "GitHub Actions", width: "80%" },
                 { icon: <SiDatadog color="#632CA6" />, label: "Datadog", width: "72%" },
                 { icon: <SiJira color="#0052CC" />, label: "Jira", width: "78%" },
                 { icon: <SiConfluence color="#172B4D" />, label: "Confluence", width: "76%" },
                 { icon: <SiPostman color="#FF6C37" />, label: "Postman", width: "80%" }
+              ].map(({ icon, label, width }) => (
+                <li className={styles.skillItem} key={label}>
+                  <div className={styles.skillLabel}>
+                    {icon} {label}
+                  </div>
+                  <div className={styles.skillBarWrapper}>
+                    <div className={styles.skillBar} style={{ width }} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* AWS */}
+          <div className={styles.card}>
+            <div className={styles.iconWrapper}>
+              <FaAws className={styles.icon} />
+            </div>
+            <h3 className={styles.cardTitle}>AWS</h3>
+            <ul className={styles.list}>
+              {[
+                { icon: <SiAmazonec2 color="#FF9900" />, label: "EC2", width: "85%" },
+                { icon: <SiAmazonecs color="#FF9900" />, label: "ECS", width: "75%" },
+                { icon: <SiAwslambda color="#FF9900" />, label: "Lambda", width: "85%" },
+                { icon: <SiAmazons3 color="#569A31" />, label: "S3", width: "85%" },
+                { icon: <SiAmazondynamodb color="#4053D6" />, label: "DynamoDB", width: "78%" },
+                { icon: <SiAmazonrds color="#4053D6" />, label: "RDS", width: "72%" },
+                { icon: <SiAmazoncloudwatch color="#FF4F8B" />, label: "CloudWatch", width: "80%" },
+                { icon: <SiAmazoniam color="#DD344C" />, label: "IAM", width: "75%" },
+                { icon: <SiAmazonapigateway color="#8C4FFF" />, label: "API Gateway", width: "78%" },
+                { icon: <SiAmazonsqs color="#FF4F8B" />, label: "SQS", width: "70%" },
+                { icon: <FaAws color="#FF9900" />, label: "VPC", width: "72%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
@@ -158,7 +196,7 @@ const Skills = () => {
             <ul className={styles.list}>
               {[
                 { icon: "🇺🇸", label: "English", width: "100%" },
-                { icon: "🇺🇸", label: "Japanese", width: "65%" },
+                { icon: "🇯🇵", label: "Japanese", width: "65%" },
                 { icon: "🇵🇰", label: "Urdu", width: "90%" },
                 { icon: "🇮🇳", label: "Hindi", width: "85%" },
                 { icon: "🏔️", label: "Kashmiri", width: "100%" }
@@ -183,7 +221,6 @@ const Skills = () => {
             <h3 className={styles.cardTitle}>Tooling & Platforms</h3>
             <ul className={styles.list}>
               {[
-                { icon: <SiAmazon />, label: "AWS (Lambda)", width: "75%" },
                 { icon: <SiGithubactions />, label: "GitHub Actions (CI/CD)", width: "80%" },
                 { icon: <SiJest />, label: "Jest", width: "75%" },
                 { icon: <SiEslint />, label: "ESLint", width: "78%" },

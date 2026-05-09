@@ -6,28 +6,72 @@ const projects = [
     date: "2024 – Present",
     description:
       "Integrated 100+ additional data brokers and improved reliability against anti-bot defenses (Cloudflare, reCAPTCHA, rate limiting) by implementing proxy routing, session rotation, retries, throttling, and stronger error handling.",
-    tech: ["Playwright", "TypeScript", "Python", "Datadog"]
+    tech: [
+      "TypeScript", "Node.js", "NestJS", "Playwright", "Browser Automation",
+      "Anti-bot Evasion", "Proxy Management", "Python", "AWS", "Datadog", "Git"
+    ]
   },
   {
     title: "Broker Scan Monitoring Agent",
     date: "2024 – 2025",
     description:
       "Created an agent-based monitoring solution to detect workflow failures, flag recurring issues, and improve visibility into production scan health — shortening time-to-fix for broker regressions.",
-    tech: ["TypeScript", "NestJS", "Datadog", "AWS"]
+    tech: [
+      "TypeScript", "Node.js", "NestJS", "AI Agents", "OpenAI",
+      "Microservices", "AWS", "Datadog", "Observability", "Python", "Git"
+    ]
   },
   {
     title: "Privacy Policy Service",
     date: "2024 – 2025",
     description:
       "Built scalable APIs and workflows to extract, validate, monitor, and deliver website privacy policy data across ~1,500 domains, helping customers understand permissions, data access, and privacy practices.",
-    tech: ["TypeScript", "NestJS", "AWS"]
+    tech: [
+      "TypeScript", "Node.js", "NestJS", "REST APIs", "Microservices",
+      "Playwright", "Python", "AWS", "Datadog", "Git"
+    ]
   },
   {
     title: "Unsubscribe Service",
     date: "2024 – 2025",
     description:
       "Built the initial proof-of-concept to automate unsubscribe actions. Started with 75 supported domains and expanded coverage to 200+ domains.",
-    tech: ["TypeScript", "NestJS", "Automation"]
+    tech: [
+      "TypeScript", "Node.js", "NestJS", "Playwright", "Browser Automation",
+      "Web Scraping", "REST APIs", "AWS", "Python", "Git"
+    ]
+  },
+  {
+    title: "Self‑Healing Scraper Agent (Gen)",
+    date: "2024 – 2025",
+    description:
+      "Prototyped an AI agent using OpenAI APIs to detect scraper breakages and propose fixes, reducing manual intervention and improving scraping uptime as broker sites changed.",
+    tech: [
+      "Python", "OpenAI", "AI Agents", "LLMs", "Playwright",
+      "Browser Automation", "Web Scraping", "TypeScript", "Git"
+    ]
+  },
+  {
+    title: "Privacy Monitor Backend (Gen)",
+    date: "2024 – Present",
+    description:
+      "Built and maintained serverless backend services for profile scanning and breach reporting with NestJS + AWS Lambda. Added CI regression testing to catch DOM/layout changes and improved reliability by 35%.",
+    tech: [
+      "TypeScript", "Node.js", "NestJS", "REST APIs", "Microservices",
+      "AWS Lambda", "Serverless", "CI/CD", "GitHub Actions",
+      "Playwright", "Datadog", "Git"
+    ]
+  },
+  {
+    title: "ImmiScore Platform (ImmiCan)",
+    date: "2024 – 2025",
+    description:
+      "Led backend development of Django REST APIs and PostgreSQL services to compute and persist ImmiScore from dynamic user profiles, plus dashboards to visualize readiness and next steps.",
+    tech: [
+      "Python", "Django", "REST APIs", "PostgreSQL", "Socket.io",
+      "React", "Next.js", "TypeScript", "Node.js",
+      "Docker", "AWS EC2", "GitHub Actions", "Git"
+    ]
   }
 ];
 
