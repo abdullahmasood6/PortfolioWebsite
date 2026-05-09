@@ -45,35 +45,42 @@ const education = [
     logo: "/education/welkin.jpg",
     icon: <FaSchool />,
     school: "SRM Welkin Higher Secondary School",
-    degree: "High School Diploma",
+    degree: "Higher Secondary Certificate (Grades 9 – 12)",
     duration: "2014 – 2021",
     location: "Sopore, India",
     details: [
       "Science Stream: Physics, Chemistry, Mathematics",
-      "Class President & Vice‑President",
-      "Lab Monitor and Extracurricular Head"
+      "Class President & Vice‑President — represented students in school‑wide initiatives",
+      "Lab Monitor and Extracurricular Head — coordinated science labs and student events",
+      "Built foundation in analytical thinking and problem solving that I later pursued in Computer Science",
+      "Active in inter‑school academic and cultural competitions"
     ]
   },
   {
     logo: "/education/sjs.jpg",
     icon: <FaSchool />,
     school: "Saint Joseph Baramulla",
-    degree: "Middle School",
+    degree: "Middle School (Grades 6 – 8)",
     duration: "2012 – 2014",
     location: "Baramulla, India",
     details: [
-      "Completed middle school education"
+      "Curriculum: Mathematics, Sciences, English, Languages, and Social Studies",
+      "Built strong fundamentals in mathematics and English communication",
+      "Participated in school sports, debates, and extracurricular activities"
     ]
   },
   {
     logo: "/education/giis.jpg",
     icon: <FaGlobeAsia />,
     school: "Global Indian International School (GIIS), Tokyo",
-    degree: "Early Schooling",
+    degree: "Early Schooling (Pre‑K – Grade 5)",
     duration: "2006 – 2012",
     location: "Tokyo, Japan",
     details: [
-      "Completed early schooling under an international curriculum"
+      "Indian curriculum delivered in an international, multicultural setting",
+      "Multilingual environment — exposure to English, Hindi, and Japanese",
+      "Early foundation in mathematics, science, and the arts",
+      "Engaged with peers from across Asia, building cross‑cultural communication skills"
     ]
   }
 ];

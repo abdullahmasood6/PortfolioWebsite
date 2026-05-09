@@ -195,11 +195,11 @@ const Skills = () => {
             <h3 className={styles.cardTitle}>Spoken Languages</h3>
             <ul className={styles.list}>
               {[
-                { icon: "🇺🇸", label: "English", width: "100%" },
-                { icon: "🇯🇵", label: "Japanese", width: "65%" },
-                { icon: "🇵🇰", label: "Urdu", width: "90%" },
-                { icon: "🇮🇳", label: "Hindi", width: "85%" },
-                { icon: "🏔️", label: "Kashmiri", width: "100%" }
+                { icon: "", label: "English", width: "100%" },
+                { icon: "", label: "Japanese", width: "65%" },
+                { icon: "", label: "Urdu", width: "90%" },
+                { icon: "", label: "Hindi", width: "85%" },
+                { icon: "", label: "Kashmiri", width: "100%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
