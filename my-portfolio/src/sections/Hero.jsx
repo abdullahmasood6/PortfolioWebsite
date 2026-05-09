@@ -19,9 +19,9 @@ const Hero = () => (
           <br />
           🚀 Magna Cum Laude · GPA 3.7 · Dean’s List (5×)
           <br />
-          💼 Software Engineer @ Gen (Identity & Privacy / Privacy Monitor)
+          💼 Software Engineer @ Gen (Identity & Privacy)
           <br />
-          ⚙️ I build scalable backend systems, scrapers, and reliability tooling
+          ⚙️ Backend systems, scraping reliability, and automation for privacy products
           <br />
           📍 Tempe, AZ · Open to remote opportunities
         </p>

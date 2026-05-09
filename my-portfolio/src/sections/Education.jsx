@@ -37,6 +37,7 @@ const education = [
         fontSize: "0.98rem",
         marginRight: "0.5rem"
       }}>Dean's List (5×)</span>,
+      "Dean’s List Semesters: Fall 2021, Spring 2022, Spring 2023, Fall 2024",
       "Relevant Coursework: Software Engineering, DSA, OOP, DBMS, Principles of Programming, Computer Human Interaction"
     ]
   },

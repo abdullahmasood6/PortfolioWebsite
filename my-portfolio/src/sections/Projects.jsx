@@ -2,25 +2,32 @@ import Card from '../components/Card';
 
 const projects = [
   {
-    title: "Self‑Healing Scraper Agent (Gen)",
-    date: "2024 – 2025",
-    description:
-      "Prototyped an AI agent using OpenAI APIs to detect scraper breakages and propose fixes, reducing manual intervention and improving scraping uptime as broker sites changed.",
-    tech: ["OpenAI", "Playwright", "Python"]
-  },
-  {
-    title: "Privacy Monitor Backend (Gen)",
+    title: "Privacy Monitor Assistant (PMA) — Broker Coverage Expansion",
     date: "2024 – Present",
     description:
-      "Built and maintained serverless backend services for profile scanning and breach reporting with NestJS + AWS Lambda. Added CI regression testing to catch DOM/layout changes and improved reliability by 35%.",
-    tech: ["NestJS", "AWS Lambda", "TypeScript", "GitHub Actions"]
+      "Integrated 100+ additional data brokers and improved reliability against anti-bot defenses (Cloudflare, reCAPTCHA, rate limiting) by implementing proxy routing, session rotation, retries, throttling, and stronger error handling.",
+    tech: ["Playwright", "TypeScript", "Python", "Datadog"]
   },
   {
-    title: "ImmiScore Platform (ImmiCan)",
+    title: "Broker Scan Monitoring Agent",
     date: "2024 – 2025",
     description:
-      "Led backend development of Django REST APIs and PostgreSQL services to compute and persist ImmiScore from dynamic user profiles, plus dashboards to visualize readiness and next steps.",
-    tech: ["Django", "PostgreSQL", "React", "Next.js"]
+      "Created an agent-based monitoring solution to detect workflow failures, flag recurring issues, and improve visibility into production scan health — shortening time-to-fix for broker regressions.",
+    tech: ["TypeScript", "NestJS", "Datadog", "AWS"]
+  },
+  {
+    title: "Privacy Policy Service",
+    date: "2024 – 2025",
+    description:
+      "Built scalable APIs and workflows to extract, validate, monitor, and deliver website privacy policy data across ~1,500 domains, helping customers understand permissions, data access, and privacy practices.",
+    tech: ["TypeScript", "NestJS", "AWS"]
+  },
+  {
+    title: "Unsubscribe Service",
+    date: "2024 – 2025",
+    description:
+      "Built the initial proof-of-concept to automate unsubscribe actions. Started with 75 supported domains and expanded coverage to 200+ domains.",
+    tech: ["TypeScript", "NestJS", "Automation"]
   }
 ];
 

@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
-const SERVICE_ID  = 'service_u54pgfc';
+const SERVICE_ID  = 'service_ppgseeu';
 const TEMPLATE_ID = 'template_ny7lbix';
 const USER_ID     = '-MahNBYXPuLndQJ5J';
 
@@ -12,6 +12,13 @@ const contactInfo = [
     value: 'ahakim1@asu.edu',
     link: 'mailto:ahakim1@asu.edu',
     description: 'Drop me a line anytime'
+  },
+  {
+    icon: '📱',
+    title: 'Phone',
+    value: '480-803-9841',
+    link: 'tel:+14808039841',
+    description: 'Text or call'
   },
   {
     icon: '📍',
@@ -32,7 +39,7 @@ const contactInfo = [
 const socialLinks = [
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/abdullahmasood1/',
+    url: 'https://www.linkedin.com/in/abdullah-masood1/',
     icon: '💼',
     color: '#0077b5'
   },
@@ -75,7 +82,8 @@ const Contact = () => {
     setStatusMsg('Sending your message...');
 
     try {
-      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID);
+      const response = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, USER_ID);
+      console.log('EmailJS success:', response);
       formRef.current.reset();
       setFormData({
         from_name: '',
@@ -85,7 +93,9 @@ const Contact = () => {
       });
       setStatusMsg('🎉 Message sent successfully! I\'ll get back to you soon.');
     } catch (err) {
-      setStatusMsg('❌ Something went wrong. Please try again or email me directly.');
+      console.error('EmailJS error:', err);
+      const detail = err?.text || err?.message || (typeof err === 'string' ? err : 'Unknown error');
+      setStatusMsg(`❌ Failed to send: ${detail}. Please email me directly at ahakim1@asu.edu.`);
     } finally {
       setIsSubmitting(false);
     }
@@ -166,7 +176,6 @@ const Contact = () => {
                   id="from_name"
                   name="from_name"
                   type="text"
-                  placeholder="John Doe"
                   required
                   value={formData.from_name}
                   onChange={handleInputChange}
@@ -183,7 +192,6 @@ const Contact = () => {
                   id="reply_to"
                   name="reply_to"
                   type="email"
-                  placeholder="john@example.com"
                   required
                   value={formData.reply_to}
                   onChange={handleInputChange}
@@ -200,7 +208,6 @@ const Contact = () => {
                   id="subject"
                   name="subject"
                   type="text"
-                  placeholder="Project discussion, collaboration, or just saying hi!"
                   required
                   value={formData.subject}
                   onChange={handleInputChange}
@@ -216,7 +223,6 @@ const Contact = () => {
                 <textarea
                   id="message"
                   name="message"
-                  placeholder="Tell me about your project, ideas, or anything you'd like to discuss..."
                   required
                   value={formData.message}
                   onChange={handleInputChange}

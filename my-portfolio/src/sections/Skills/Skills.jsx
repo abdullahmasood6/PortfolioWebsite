@@ -53,6 +53,7 @@ const Skills = () => {
         <div className={styles.toolbar}>
           <button className={styles.toolbarBtn}>Languages</button>
           <button className={styles.toolbarBtn}>Frameworks</button>
+          <button className={styles.toolbarBtn}>Tools</button>
           <button className={styles.toolbarBtn}>Spoken Languages</button>
         </div>
 
@@ -65,15 +66,16 @@ const Skills = () => {
             <h3 className={styles.cardTitle}>Programming Languages</h3>
             <ul className={styles.list}>
               {[
-                { icon: <SiHtml5 color="#e34c26" />, label: "HTML", width: "95%" },
-                { icon: <SiCss3 color="#264de4" />, label: "CSS", width: "90%" },
-                { icon: <FaJs color="#f0db4f" />, label: "JavaScript", width: "85%" },
-                { icon: <SiTypescript color="#3178c6" />, label: "TypeScript", width: "85%" },
-                { icon: <FaPython color="#3776ab" />, label: "Python", width: "88%" },
                 { icon: <FaJava color="#007396" />, label: "Java", width: "90%" },
-                { icon: <SiCplusplus color="#00599c" />, label: "C++", width: "75%" },
-                { icon: <FaTerminal color="#00ffff" />, label: "Bash", width: "75%" },
-                { icon: <SiPostgresql color="#336791" />, label: "SQL (PostgreSQL)", width: "78%" }
+                { icon: <SiPostgresql color="#336791" />, label: "SQL", width: "82%" },
+                { icon: <FaJs color="#f0db4f" />, label: "JavaScript", width: "86%" },
+                { icon: <SiTypescript color="#3178c6" />, label: "TypeScript", width: "86%" },
+                { icon: <FaTerminal color="#00ffff" />, label: "NestJS", width: "80%" },
+                { icon: <FaTerminal color="#00ffff" />, label: "Playwright", width: "82%" },
+                { icon: <FaPython color="#3776ab" />, label: "Python", width: "86%" },
+                { icon: <FaNode color="#3c873a" />, label: "Node.js", width: "82%" },
+                { icon: <SiCplusplus color="#00599c" />, label: "C", width: "70%" },
+                { icon: <SiCplusplus color="#00599c" />, label: "C++", width: "75%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
@@ -99,13 +101,41 @@ const Skills = () => {
                 { icon: <SiNextdotjs />, label: "Next.js", width: "80%" },
                 { icon: <FaNode color="#3c873a" />, label: "Node.js", width: "85%" },
                 { icon: <SiExpress />, label: "Express.js", width: "78%" },
-                { icon: <SiNestjs color="#ea2845" />, label: "NestJS", width: "80%" },
+                { icon: <SiNestjs color="#ea2845" />, label: "NestJS", width: "82%" },
                 { icon: <SiDjango color="#092e20" />, label: "Django", width: "78%" },
                 { icon: <SiTailwindcss color="#06B6D4" />, label: "Tailwind CSS", width: "85%" },
                 { icon: <FaBootstrap color="#7952B3" />, label: "Bootstrap", width: "75%" },
                 { icon: <SiP5Dotjs color="#ED225D" />, label: "p5.js", width: "68%" },
-                { icon: <FaTerminal color="#00ffff" />, label: "Playwright", width: "82%" },
+                { icon: <FaTerminal color="#00ffff" />, label: "Playwright", width: "84%" },
                 { icon: <SiGraphql color="#e10098" />, label: "GraphQL", width: "72%" }
+              ].map(({ icon, label, width }) => (
+                <li className={styles.skillItem} key={label}>
+                  <div className={styles.skillLabel}>
+                    {icon} {label}
+                  </div>
+                  <div className={styles.skillBarWrapper}>
+                    <div className={styles.skillBar} style={{ width }} />
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Tools */}
+          <div className={styles.card}>
+            <div className={styles.iconWrapper}>
+              <FaTerminal className={styles.icon} />
+            </div>
+            <h3 className={styles.cardTitle}>Tools</h3>
+            <ul className={styles.list}>
+              {[
+                { icon: <FaTerminal color="#00ffff" />, label: "Cursor", width: "86%" },
+                { icon: <SiGithubactions />, label: "GitHub", width: "85%" },
+                { icon: <SiGithubactions />, label: "GitHub Actions", width: "80%" },
+                { icon: <SiDatadog color="#632CA6" />, label: "Datadog", width: "72%" },
+                { icon: <SiJira color="#0052CC" />, label: "Jira", width: "78%" },
+                { icon: <SiConfluence color="#172B4D" />, label: "Confluence", width: "76%" },
+                { icon: <SiPostman color="#FF6C37" />, label: "Postman", width: "80%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
@@ -127,11 +157,11 @@ const Skills = () => {
             <h3 className={styles.cardTitle}>Spoken Languages</h3>
             <ul className={styles.list}>
               {[
-                { icon: "🇺🇸", label: "English (Proficient)", width: "100%" },
-                { icon: "🇯🇵", label: "Japanese (Working knowledge)", width: "65%" },
-                { icon: "🇵🇰", label: "Urdu (Proficient)", width: "90%" },
-                { icon: "🇮🇳", label: "Hindi (Proficient)", width: "85%" },
-                { icon: "🏔️", label: "Kashmiri (Native)", width: "100%" }
+                { icon: "🇺🇸", label: "English", width: "100%" },
+                { icon: "🇺🇸", label: "Japanese", width: "65%" },
+                { icon: "🇵🇰", label: "Urdu", width: "90%" },
+                { icon: "🇮🇳", label: "Hindi", width: "85%" },
+                { icon: "🏔️", label: "Kashmiri", width: "100%" }
               ].map(({ icon, label, width }) => (
                 <li className={styles.skillItem} key={label}>
                   <div className={styles.skillLabel}>
