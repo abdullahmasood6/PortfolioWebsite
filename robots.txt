@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.abdullah-masood.com
+Sitemap: https://www.abdullah-masood.com/sitemap.xml
