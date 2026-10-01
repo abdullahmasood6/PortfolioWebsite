@@ -1,0 +1,36 @@
+1:"$Sreact.fragment"
+2:I[97367,["/_next/static/chunks/1xvwlq4rdoln0.js","/_next/static/chunks/29fi4fhja-8yc.js","/_next/static/chunks/2w1mhd7r7g09l.js","/_next/static/chunks/3cei53yf4sje5.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+7:I[97367,["/_next/static/chunks/1xvwlq4rdoln0.js","/_next/static/chunks/29fi4fhja-8yc.js","/_next/static/chunks/2w1mhd7r7g09l.js","/_next/static/chunks/3cei53yf4sje5.js"],"ViewportBoundary"]
+8:I[97367,["/_next/static/chunks/1xvwlq4rdoln0.js","/_next/static/chunks/29fi4fhja-8yc.js","/_next/static/chunks/2w1mhd7r7g09l.js","/_next/static/chunks/3cei53yf4sje5.js"],"MetadataBoundary"]
+6:X
+1b:X
+1b:C
+0:{"buildId":"KcM3ZeU4yGuzS3KRtOJdV","data":[{"rsc":["$","$1","c",{"children":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":"$@5","staleTime":"$6","varyParams":null},{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L7",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, maximum-scale=5"}],["$","meta","2",{"name":"theme-color","content":"#020408"}]]}],["$","div",null,{"hidden":true,"children":["$","$L8",null,{"children":["$","$3",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Abdullah Masood Hakim | Software Engineer, Backend & AI Engineer"}],["$","meta","1",{"name":"description","content":"Abdullah Masood Hakim is a Software Engineer at AstreaX and BlueCiate in Tempe, Arizona, building backend systems, production AI agents and LLM apps, and full-stack products with TypeScript, NestJS, Python, React, Next.js and AWS. ASU Computer Science, Magna Cum Laude."}],["$","meta","2",{"name":"application-name","content":"Abdullah Masood Hakim"}],["$","link","3",{"rel":"author","href":"https://www.abdullah-masood.com"}],["$","meta","4",{"name":"author","content":"Abdullah Masood Hakim"}],["$","link","5",{"rel":"manifest","href":"/manifest.webmanifest"}],["$","meta","6",{"name":"generator","content":"Next.js"}],["$","meta","7",{"name":"keywords","content":"Abdullah Masood,Abdullah Masood Hakim,Abdullah Hakim,Abdullah Masood portfolio,Software Engineer,Software Engineer Arizona,Software Engineer Tempe,Backend Engineer,AI Engineer,AI Agents,LLM Engineer,Full-Stack Developer,TypeScript,NestJS,Python,Django,React,Next.js,AWS,OpenAI,MCP,Playwright,AstreaX,BlueCiate,Gen Digital,ImmiCan,Arizona State University,ASU Computer Science"}],["$","meta","8",{"name":"creator","content":"Abdullah Masood Hakim"}],["$","meta","9",{"name":"publisher","content":"Abdullah Masood Hakim"}],["$","meta","10",{"name":"robots","content":"index, follow"}],["$","meta","11",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","12",{"name":"category","content":"technology"}],["$","link","13",{"rel":"canonical","href":"https://www.abdullah-masood.com/"}],["$","meta","14",{"name":"format-detection","content":"telephone=no, address=no, email=no"}],["$","meta","15",{"property":"og:title","content":"Abdullah Masood Hakim | Software Engineer, Backend & AI Engineer"}],["$","meta","16",{"property":"og:description","content":"Software Engineer at AstreaX and BlueCiate. Backend systems, production AI agents, and full-stack apps. Based in Tempe, Arizona."}],["$","meta","17",{"property":"og:url","content":"https://www.abdullah-masood.com/"}],["$","meta","18",{"property":"og:site_name","content":"Abdullah Masood Hakim"}],["$","meta","19",{"property":"og:locale","content":"en_US"}],["$","meta","20",{"property":"og:image","content":"https://www.abdullah-masood.com/og.png"}],["$","meta","21",{"property":"og:image:type","content":"image/png"}],"$L9","$La","$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16"]}]}]}],"$L17"]}],"isPartial":"$@18","staleTime":"$6","varyParams":null},{"rsc":"$L19","isPartial":"$@1a","staleTime":"$6","varyParams":"$1b"}],"isUpgradeableISRFallback":false,"a":"$@1c","rootVaryParams":null,"needsRuntimeRequest":"$@1d"}
+1e:I[27201,["/_next/static/chunks/1xvwlq4rdoln0.js","/_next/static/chunks/29fi4fhja-8yc.js","/_next/static/chunks/2w1mhd7r7g09l.js","/_next/static/chunks/3cei53yf4sje5.js"],"IconMark"]
+1f:I[39756,["/_next/static/chunks/1xvwlq4rdoln0.js","/_next/static/chunks/29fi4fhja-8yc.js","/_next/static/chunks/2w1mhd7r7g09l.js","/_next/static/chunks/3cei53yf4sje5.js"],"default"]
+20:I[37457,["/_next/static/chunks/1xvwlq4rdoln0.js","/_next/static/chunks/29fi4fhja-8yc.js","/_next/static/chunks/2w1mhd7r7g09l.js","/_next/static/chunks/3cei53yf4sje5.js"],"default"]
+4:null
+9:["$","meta","22",{"property":"og:image:width","content":"1200"}]
+a:["$","meta","23",{"property":"og:image:height","content":"630"}]
+b:["$","meta","24",{"property":"og:image:alt","content":"Abdullah Masood Hakim, Software Engineer: Backend, AI agents and full-stack apps"}]
+c:["$","meta","25",{"property":"og:type","content":"profile"}]
+d:["$","meta","26",{"property":"profile:first_name","content":"Abdullah"}]
+e:["$","meta","27",{"property":"profile:last_name","content":"Masood Hakim"}]
+f:["$","meta","28",{"property":"profile:username","content":"abdullah-masood1"}]
+10:["$","meta","29",{"name":"twitter:card","content":"summary_large_image"}]
+11:["$","meta","30",{"name":"twitter:title","content":"Abdullah Masood Hakim | Software Engineer, Backend & AI Engineer"}]
+12:["$","meta","31",{"name":"twitter:description","content":"Software Engineer at AstreaX and BlueCiate. Backend systems, production AI agents, and full-stack apps."}]
+13:["$","meta","32",{"name":"twitter:image","content":"https://www.abdullah-masood.com/og.png"}]
+14:["$","meta","33",{"name":"twitter:image:alt","content":"Abdullah Masood Hakim, Software Engineer: Backend, AI agents and full-stack apps"}]
+15:["$","link","34",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}]
+16:["$","$L1e","35",{}]
+17:["$","meta",null,{"name":"next-size-adjust","content":""}]
+19:["$","$1","c",{"children":[null,["$","$L1f",null,{"parallelRouterKey":"children","template":["$","$L20",null,{}]}]]}]
+1d:true
+6:300
+6:C
+1c:0
+1a:"$undefined"
+5:"$undefined"
+18:"$undefined"
